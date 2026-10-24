@@ -194,7 +194,8 @@ document.documentElement.lang=D.lang==="en"?"en":"ms";
 document.title=(D.t||"Kloz Karangan")+" · Kloz";
 
 /* D: {t,q,lv,lang,mode:'check'|'key'|'none',wb,lab,P:[[str|gapIndex]],A:[[answer,alt..]],C:[classIdx],CL:[[label,colourSlot]],N:[note],X:[decoys],ch,dr} */
-const A=D.A||[], n=A.length, CL=D.CL||[], C=D.C||[], N=D.N||[];
+/* CL colour slot goes into a class attribute unescaped, so force it to an integer 1-7 (link data is untrusted). */
+const A=D.A||[], n=A.length, CL=(Array.isArray(D.CL)?D.CL:[]).map(c=>[String((c&&c[0])??""),Math.min(7,Math.max(1,parseInt(c&&c[1],10)||5))]), C=D.C||[], N=D.N||[];
 const saved=store.get(key)||{};
 const st={vals:saved.vals||Array(n).fill(""),name:saved.name||"",ch:saved.ch||"",checked:false,shown:false,res:null};
 const save=()=>store.set(key,{vals:st.vals,name:st.name,ch:st.ch});
