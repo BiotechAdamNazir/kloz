@@ -1,0 +1,155 @@
+{
+ "slug": "article",
+ "t": "A Lunch Break with a Difference",
+ "q": "Read the whole article first. Then fill each gap with the best word from the box. Use each answer once. Four words are not needed.",
+ "lv": "IGCSE 0472",
+ "lang": "en",
+ "mode": "key",
+ "wb": true,
+ "lab": true,
+ "dr": true,
+ "P": [
+  [
+   "Is your lunch break becoming a routine of eating quickly and staring at a screen? At my school in Malaysia, we tried something different: a board game club. It began with just six friends, ",
+   0,
+   " we hoped others would join. The headteacher signed a form giving us ",
+   1,
+   " to use an empty classroom during lunch. Our librarian, ",
+   2,
+   " enjoys puzzles herself, offered some useful ",
+   3,
+   " about choosing games for beginners."
+  ],
+  [
+   "We decided to meet ",
+   4,
+   " Wednesdays, when no other clubs used the room. The library agreed to ",
+   5,
+   " us several games, which we would return at the end of term. That meant we needed very ",
+   6,
+   " money to get started. Before each session, two volunteers would ",
+   7,
+   " the chairs into small circles so that nobody was left sitting alone."
+  ],
+  [
+   "At the first meeting, the rules ",
+   8,
+   " explained before anyone started playing. Some games took longer ",
+   9,
+   " we expected, so we chose shorter ones the following week. Everyone had to take ",
+   10,
+   ", waiting for the previous player to finish before moving a piece. Soon, the quietest students were joining in too."
+  ],
+  [
+   "After a month, even students who had never spoken in class were chatting easily. Several said the club had given them the ",
+   11,
+   " to introduce themselves to new people. You can start something similar ",
+   12,
+   " buying expensive equipment: try cards or games your friends already own. Our little experiment was a ",
+   13,
+   ", and now Wednesday is the lunch break everyone looks forward to."
+  ]
+ ],
+ "A": [
+  [
+   "although",
+   "though"
+  ],
+  [
+   "permission"
+  ],
+  [
+   "who"
+  ],
+  [
+   "advice"
+  ],
+  [
+   "on"
+  ],
+  [
+   "lend"
+  ],
+  [
+   "little"
+  ],
+  [
+   "arrange"
+  ],
+  [
+   "were"
+  ],
+  [
+   "than"
+  ],
+  [
+   "turns"
+  ],
+  [
+   "confidence"
+  ],
+  [
+   "without"
+  ],
+  [
+   "success"
+  ]
+ ],
+ "C": [
+  0,
+  1,
+  0,
+  1,
+  0,
+  1,
+  0,
+  1,
+  0,
+  0,
+  1,
+  1,
+  0,
+  1
+ ],
+ "CL": [
+  [
+   "Grammar",
+   1
+  ],
+  [
+   "Vocabulary",
+   3
+  ]
+ ],
+ "N": [
+  "Although introduces the contrasting clause; despite cannot directly precede 'we hoped'.",
+  "Permission means authorisation; the headteacher's signed form allows use of the classroom, rather than offering advice.",
+  "Who adds information about a person between commas; that cannot introduce this non-defining relative clause.",
+  "Advice is uncountable, so some advice is correct; advices is not the standard plural for suggestions.",
+  "Use on before days of the week; other prepositions in the box do not fit.",
+  "Lend means give temporarily; borrow means receive temporarily and cannot take 'us several games' here.",
+  "Money is uncountable, so very little is correct; few would require a plural countable noun.",
+  "Arrange means put in order; 'into small circles' describes a layout that borrow cannot introduce.",
+  "Plural rules needs were; the past passive 'were explained' shows that someone explained the rules.",
+  "The comparative longer takes than; although would not introduce the required comparison.",
+  "Take turns means act one after another; waiting for the previous player confirms this meaning.",
+  "The requires the noun confidence here; confident is an adjective and cannot name the quality given.",
+  "Without takes the -ing form buying; existing games remove the need to purchase expensive equipment.",
+  "A success means something that worked well; the popular club provides evidence, while confident is an adjective."
+ ],
+ "X": [
+  "despite",
+  "advices",
+  "borrow",
+  "confident"
+ ],
+ "ch": "Write two sentences suggesting a lunchtime activity for your school, using although in one sentence and without in the other.",
+ "decoy_notes": {
+  "despite": "Tempts gap 1 (index 0): its contrast meaning is suitable, but it needs a noun or -ing form, not the clause 'we hoped'.",
+  "advices": "Tempts gap 4 (index 3): learners may add -s after some, but advice meaning suggestions is uncountable.",
+  "borrow": "Tempts gap 6 (index 5): the library gives the games temporarily, so it lends them; borrow reverses the direction and cannot take this double object.",
+  "confident": "Tempts gap 12 (index 11): the meaning is related, but 'the confident to introduce' is ungrammatical; the noun confidence is required."
+ },
+ "source_notes": "Original supplementary magazine article and cloze, not copied from an examination and not presented as an official Cambridge task. Level and style checked against the supplied May/June 2025 Reading papers 0472/21 and 0472/22, extracted with pdftotext: Exercise 3 in each mixes grammatical and lexical choices in a seven-gap text; 0472/21 Exercise 4 uses a familiar school-performance context, and 0472/22 Exercise 6 uses an accessible first-person teenage-club account. This original activity expands to 14 gaps and a shared word box as requested. Familiar school vocabulary, clear narrative sequencing, relative clauses, passive forms and contextual collocations provide the intended level.",
+ "review": "Opus 5.5 review 24/10/26: 14/14 gaps sound; added accepted alt though (gap 1). Awaiting Adam approval."
+}

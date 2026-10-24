@@ -1,0 +1,160 @@
+{
+ "slug": "blog",
+ "t": "Six Rolls, Not Sixteen!",
+ "q": "Read the whole post first. Then fill each gap with the best word from the box. Each word is used once. Four words are not needed.",
+ "lv": "IGCSE 0472",
+ "lang": "en",
+ "mode": "key",
+ "wb": true,
+ "lab": true,
+ "dr": true,
+ "P": [
+  [
+   "Last Saturday, I started my first paid job at the bakery near our flat. I thought serving bread would be easy, but by the time the doors opened, I ",
+   0,
+   " already changed my mind. There were prices to learn, bags to fold and customers to ",
+   1,
+   ". The owner, ",
+   2,
+   " had promised to train me, handed me ",
+   3,
+   " apron that almost reached my knees."
+  ],
+  [
+   "My first task was to ",
+   4,
+   " orders at the counter. The coffee machine was making such a loud noise ",
+   5,
+   " I had to ask customers to repeat themselves. One customer asked for six rolls, but I packed sixteen. Luckily, I noticed my ",
+   6,
+   " before she paid. I apologised and checked the order again, trying not to turn bright red."
+  ],
+  [
+   "The real trouble began ",
+   7,
+   " half past ten. We ran ",
+   8,
+   " of small cake boxes just as a long queue formed. There was so ",
+   9,
+   " space on the counter that I moved the empty trays underneath it. Then I helped my manager ",
+   10,
+   " with the problem by packing the cakes in larger boxes."
+  ],
+  [
+   "When the last customer left, I felt a huge sense of ",
+   11,
+   ". I had expected my feet to ache, but not my face from smiling! I've worked two more shifts ",
+   12,
+   " that morning, and remembering the prices is becoming easier. I'm still slow, but my manager says my ",
+   13,
+   " is growing. Next Saturday, my goal is simple: six rolls must mean six rolls."
+  ]
+ ],
+ "A": [
+  [
+   "had"
+  ],
+  [
+   "greet",
+   "welcome"
+  ],
+  [
+   "who"
+  ],
+  [
+   "an"
+  ],
+  [
+   "take",
+   "accept"
+  ],
+  [
+   "that"
+  ],
+  [
+   "mistake",
+   "error"
+  ],
+  [
+   "at"
+  ],
+  [
+   "out",
+   "short"
+  ],
+  [
+   "little"
+  ],
+  [
+   "deal",
+   "cope"
+  ],
+  [
+   "relief"
+  ],
+  [
+   "since"
+  ],
+  [
+   "confidence",
+   "self-confidence"
+  ]
+ ],
+ "C": [
+  0,
+  1,
+  0,
+  0,
+  1,
+  0,
+  1,
+  0,
+  1,
+  0,
+  1,
+  1,
+  0,
+  1
+ ],
+ "CL": [
+  [
+   "Grammar",
+   1
+  ],
+  [
+   "Vocabulary",
+   3
+  ]
+ ],
+ "N": [
+  "Past perfect: the change happened before the doors opened. 'Have' cannot express this earlier past event here.",
+  "You greet customers when they arrive; the infinitive needs a verb meaning to welcome them.",
+  "Use 'who' for the owner, a person, in this non-defining clause; 'which' refers to things.",
+  "'Apron' begins with a vowel sound, so the singular noun needs 'an', not 'a'.",
+  "'Take orders' means record what customers want; the task is serving customers, not giving instructions.",
+  "The result pattern is 'such a loud noise that'; 'than' introduces comparisons, not this result clause.",
+  "Packing sixteen instead of six is a mistake. 'Noticed my fault' is not natural for this specific error.",
+  "Use 'at' before a precise clock time: 'at half past ten'.",
+  "'Ran out of' means used the entire supply; the larger boxes solve the shortage.",
+  "'Space' is uncountable; 'so little space' explains why the trays had to move.",
+  "'Deal with a problem' means take action to solve it; 'deal' needs the following 'with'.",
+  "'A sense of relief' describes feeling better when a difficult situation ends, as this busy shift does.",
+  "Present perfect with 'since' links later shifts to the starting point, that first morning.",
+  "'Confidence' is the belief that you can do something; the possessive 'my' requires a noun here."
+ ],
+ "X": [
+  "have",
+  "which",
+  "fault",
+  "than"
+ ],
+ "ch": "Write a short blog paragraph about your first attempt at an unfamiliar task, explaining one mistake and what you learnt from it.",
+ "decoy_notes": {
+  "have": "Tempts gap 1 (index 0), but the earlier event before the doors opened requires past perfect 'had', not present perfect 'have'.",
+  "which": "Tempts gap 3 (index 2), but the non-defining relative clause describes the owner, a person, so it requires 'who'.",
+  "fault": "Tempts gap 7 (index 6), but 'noticed my fault' is not idiomatic for discovering this incorrect order; 'mistake' names the specific error.",
+  "than": "Tempts gap 6 (index 5), but 'such ... that' introduces a result; 'than' belongs in a comparison."
+ },
+ "source_notes": "Entirely original teenager's blog post; no examination text copied. Skimmed the supplied May/June 2025 Reading papers 0472/21 and 0472/22 using pdftotext. Their informal emails and blogs use first-person accounts, familiar experiences, concrete details and straightforward sequencing. Their Exercise 3 clozes test contextual vocabulary, collocations, linkers and grammatical patterns. These features informed the register and difficulty here; this 14-gap word-box activity is classroom practice, not a reproduction of the examination format.",
+ "review": "Opus 5.5 review 24/10/26: 14/14 gaps sound; no change. Awaiting Adam approval."
+}
