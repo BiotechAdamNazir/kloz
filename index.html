@@ -116,6 +116,26 @@ h1{font:400 clamp(24px,5vw,34px)/1.12 var(--display);margin:4px 0 6px;text-wrap:
 .empty{background:var(--sheet);border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center}
 .empty h1{margin-bottom:8px}
 .foot{font-size:.76rem;color:var(--muted);text-align:center}
+/* Floating word box (D.fb): a bubble above the check bar opens the same words wherever the student is on the page. */
+.fab{position:fixed;right:max(14px,env(safe-area-inset-right,0px));bottom:calc(var(--dockh,64px) + 12px);z-index:6;cursor:pointer;
+  display:flex;gap:8px;align-items:center;border:0;border-radius:99px;padding:11px 16px;background:var(--accent);color:var(--sheet);font-weight:700;font-size:.95rem;
+  box-shadow:0 10px 26px -10px color-mix(in srgb,var(--ink) 60%,transparent);transition:transform .2s,opacity .2s}
+.fab:active{transform:scale(.95)}
+.fab .ct{background:var(--sheet);color:var(--accent);border-radius:99px;padding:0 7px;font-size:.8rem;min-width:1.7em;text-align:center;font-variant-numeric:tabular-nums}
+.fab.off{opacity:0;pointer-events:none;transform:translateY(12px) scale(.9)}
+.pop{position:fixed;right:max(14px,env(safe-area-inset-right,0px));bottom:calc(var(--dockh,64px) + 66px);z-index:7;width:min(400px,calc(100vw - 28px));
+  max-height:min(48vh,380px);overflow:auto;background:var(--sheet);border:1.5px solid var(--accent);border-radius:16px;padding:10px 12px 12px;display:grid;gap:8px;
+  box-shadow:0 18px 40px -16px color-mix(in srgb,var(--ink) 55%,transparent)}
+.pop .h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.78rem;color:var(--muted);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.pop .x{cursor:pointer;border:1px solid var(--line);background:transparent;border-radius:99px;width:34px;height:34px;font-size:1rem;line-height:1}
+.pop .tip{font-size:.8rem;color:var(--muted)}
+.pop .w{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 35%,var(--line));color:var(--ink);font-weight:600}
+.pop .w.used{background:transparent}
+@media (prefers-reduced-motion:no-preference){
+  .pop:not([hidden]){animation:bub .28s cubic-bezier(.2,1.2,.4,1) both}
+  @keyframes bub{from{opacity:0;transform:translateY(14px) scale(.96)}}
+  .fab .ct.bump{animation:pop .35s both}
+}
 </style>
 </head>
 <body>
@@ -154,14 +174,16 @@ const ui=D&&D.lang==="en"?{
   score:"Your score",byclass:"By word type",keyh:"Answer key",copy:"Copy my result",copied:"Result copied. Paste it to your teacher.",
   challenge:"Challenge",chdef:"Without looking, rewrite your favourite paragraph from memory.",draft:"Draft: your teacher has not checked this sheet yet.",
   near:"Almost: check your spelling.",empty:"This link is incomplete. Ask your teacher to send it again.",fillsome:"Fill in at least one gap first.",
-  saved:"Your answers are saved on this device.",accepted:"also accepted"
+  saved:"Your answers are saved on this device.",accepted:"also accepted",
+  boxbtn:"Word box",close:"Close word box",tip:"Tap a gap, then tap a word."
 }:{
   name:"Nama",date:"Tarikh",box:"Kotak kata",unused:n=>n?`${n} perkataan tidak diperlukan`:"",how:"Taip dalam setiap ruang, atau ketik ruang kemudian ketik perkataan dalam kotak.",
   check:"Semak jawapan",retry:"Cuba lagi yang salah",show:"Tunjuk jawapan",hide:"Sembunyi jawapan",filled:(a,b)=>`${a}/${b} diisi`,
   score:"Markah anda",byclass:"Mengikut golongan",keyh:"Skema jawapan",copy:"Salin keputusan",copied:"Keputusan disalin. Tampal dan hantar kepada guru.",
   challenge:"Cabaran",chdef:"Tanpa melihat teks, tulis semula perenggan kegemaran anda.",draft:"Draf: lembaran ini belum disemak oleh guru.",
   near:"Hampir betul: semak ejaan.",empty:"Pautan ini tidak lengkap. Minta guru hantar semula.",fillsome:"Isi sekurang-kurangnya satu ruang dahulu.",
-  saved:"Jawapan anda disimpan pada peranti ini.",accepted:"juga diterima"
+  saved:"Jawapan anda disimpan pada peranti ini.",accepted:"juga diterima",
+  boxbtn:"Kotak kata",close:"Tutup kotak kata",tip:"Ketik ruang, kemudian ketik perkataan."
 };
 
 if(!D||!Array.isArray(D.P)){
@@ -207,7 +229,10 @@ app.innerHTML=`
     <div class="challenge"><h2>${ui.challenge}</h2><p>${esc(D.ch||ui.chdef)}</p><textarea id="chx" aria-label="${ui.challenge}">${esc(st.ch)}</textarea></div>
   </article>
   <section class="result" id="result" hidden aria-live="polite"></section>
-  <p class="foot">${ui.saved}</p>`;
+  <p class="foot">${ui.saved}</p>
+  ${D.wb&&D.fb?`<button type="button" class="fab off" id="fab" aria-expanded="false" aria-controls="pop"><span id="fablab">${ui.boxbtn}</span><span class="ct" id="fabct"></span></button>
+  <div class="pop" id="pop" role="dialog" aria-label="${ui.box}" hidden><div class="h"><span>${ui.box}</span><button type="button" class="x" id="popx" aria-label="${ui.close}">✕</button></div>
+    <div class="words">${boxWords.map((w,k)=>`<button type="button" class="w" data-w="${esc(w)}" data-k="${k}">${esc(w)}</button>`).join("")}</div><div class="tip">${ui.tip}</div></div>`:""}`;
 
 const inputs=[...document.querySelectorAll(".gap input")];
 let focusI=0;
@@ -221,7 +246,7 @@ $("#nm").addEventListener("input",e=>{st.name=e.target.value;save()});
 $("#chx").addEventListener("input",e=>{st.ch=e.target.value;save()});
 document.querySelectorAll(".w").forEach(b=>b.addEventListener("mousedown",e=>e.preventDefault()));
 document.querySelectorAll(".w").forEach(b=>b.addEventListener("click",()=>{
-  let i=focusI; const cur=inputs.find(x=>+x.dataset.i===i);
+  const ae=document.activeElement;let i=ae&&ae.matches&&ae.matches(".gap input")?+ae.dataset.i:focusI; const cur=inputs.find(x=>+x.dataset.i===i);
   if(!cur||cur.value){const empty=inputs.find(x=>!x.value);if(!empty){toast(ui.filled(n,n));return}i=+empty.dataset.i}
   const inp=document.getElementById("in"+i);inp.value=b.dataset.w;st.vals[i]=inp.value;fit(inp);clearMark(i);save();refresh();
   const nx=inputs.slice(inputs.indexOf(inp)+1).find(x=>!x.value)||inputs.find(x=>!x.value);(nx||inp).focus();
@@ -232,8 +257,10 @@ function refresh(){
   const filled=st.vals.filter(v=>norm(v)).length;
   $("#progtxt").textContent=ui.filled(filled,n);$("#progfi").style.width=(n?filled/n*100:0)+"%";
   /* strike used words in the box: each box word used as many times as typed */
-  const used={};st.vals.forEach(v=>{const k=norm(v);if(k)used[k]=(used[k]||0)+1});
-  document.querySelectorAll(".w").forEach(b=>{const k=norm(b.dataset.w);if(used[k]>0){b.classList.add("used");used[k]--}else b.classList.remove("used")});
+  const used0={};st.vals.forEach(v=>{const k=norm(v);if(k)used0[k]=(used0[k]||0)+1});
+  document.querySelectorAll(".words").forEach(box=>{const used={...used0};let left=0;
+    box.querySelectorAll(".w").forEach(b=>{const k=norm(b.dataset.w);if(used[k]>0){b.classList.add("used");used[k]--}else{b.classList.remove("used");left++}});
+    const ct=document.getElementById("fabct");if(ct&&box.closest("#pop")&&ct.textContent!==String(left)){ct.textContent=left;ct.classList.remove("bump");void ct.offsetWidth;ct.classList.add("bump")}});
 }
 const canCheck=D.mode!=="none";
 $("#dock").hidden=false;
@@ -279,6 +306,19 @@ $("#bShow").addEventListener("click",()=>{st.shown=!st.shown;$("#bShow").textCon
   for(let i=0;i<n;i++){const g=document.getElementById("g"+i);if(st.shown&&grade(i)!=="ok"){g.classList.add("shown");g.dataset.prev=st.vals[i];document.getElementById("in"+i).value=A[i][0]}
     else if(!st.shown&&g.classList.contains("shown")){g.classList.remove("shown");document.getElementById("in"+i).value=g.dataset.prev||""}}
   renderResult()});
+/* floating word box: bubble hides while the top word box is on screen; opens a copy of the box anywhere else */
+(function(){const fab=$("#fab"),pop=$("#pop");if(!fab||!pop)return;
+  const dock=$("#dock"),setH=()=>document.documentElement.style.setProperty("--dockh",dock.offsetHeight+"px");setH();
+  if(window.ResizeObserver)new ResizeObserver(setH).observe(dock);else addEventListener("resize",setH);
+  const open=v=>{pop.hidden=!v;fab.setAttribute("aria-expanded",v);$("#fablab").textContent=v?ui.close.split(" ")[0]:ui.boxbtn};
+  fab.addEventListener("mousedown",e=>e.preventDefault());$("#popx").addEventListener("mousedown",e=>e.preventDefault());
+  fab.addEventListener("click",()=>open(pop.hidden));$("#popx").addEventListener("click",()=>open(false));
+  addEventListener("keydown",e=>{if(e.key==="Escape"&&!pop.hidden)open(false)});
+  const top=document.querySelector(".sheet .box");let was=null;
+  const sync=()=>{const r=top?top.getBoundingClientRect():null;const vis=!!r&&r.bottom>8&&r.top<innerHeight-dock.offsetHeight;
+    if(vis!==was){was=vis;fab.classList.toggle("off",vis);if(vis)open(false)}};
+  addEventListener("scroll",sync,{passive:true});addEventListener("resize",sync);sync();
+})();
 $("#bCheck").textContent=ui.check;$("#bRetry").textContent=ui.retry;$("#bShow").textContent=ui.show;
 refresh();
 })();

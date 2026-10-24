@@ -7,7 +7,7 @@
  "mode": "key",
  "wb": true,
  "lab": true,
- "dr": true,
+ "dr": false,
  "P": [
   [
    "Last Saturday, I started my first paid job at the bakery near our flat. I thought serving bread would be easy, but by the time the doors opened, I ",
@@ -156,5 +156,6 @@
   "than": "Tempts gap 6 (index 5), but 'such ... that' introduces a result; 'than' belongs in a comparison."
  },
  "source_notes": "Entirely original teenager's blog post; no examination text copied. Skimmed the supplied May/June 2025 Reading papers 0472/21 and 0472/22 using pdftotext. Their informal emails and blogs use first-person accounts, familiar experiences, concrete details and straightforward sequencing. Their Exercise 3 clozes test contextual vocabulary, collocations, linkers and grammatical patterns. These features informed the register and difficulty here; this 14-gap word-box activity is classroom practice, not a reproduction of the examination format.",
- "review": "Opus 5.5 review 24/10/26: 14/14 gaps sound; no change. Awaiting Adam approval."
+ "review": "Opus 5.5 review 24/10/26: 14/14 gaps sound; no change. Approved by Adam 24/10/26.",
+ "fb": true
 }

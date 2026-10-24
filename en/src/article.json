@@ -7,7 +7,7 @@
  "mode": "key",
  "wb": true,
  "lab": true,
- "dr": true,
+ "dr": false,
  "P": [
   [
    "Is your lunch break becoming a routine of eating quickly and staring at a screen? At my school in Malaysia, we tried something different: a board game club. It began with just six friends, ",
@@ -151,5 +151,6 @@
   "confident": "Tempts gap 12 (index 11): the meaning is related, but 'the confident to introduce' is ungrammatical; the noun confidence is required."
  },
  "source_notes": "Original supplementary magazine article and cloze, not copied from an examination and not presented as an official Cambridge task. Level and style checked against the supplied May/June 2025 Reading papers 0472/21 and 0472/22, extracted with pdftotext: Exercise 3 in each mixes grammatical and lexical choices in a seven-gap text; 0472/21 Exercise 4 uses a familiar school-performance context, and 0472/22 Exercise 6 uses an accessible first-person teenage-club account. This original activity expands to 14 gaps and a shared word box as requested. Familiar school vocabulary, clear narrative sequencing, relative clauses, passive forms and contextual collocations provide the intended level.",
- "review": "Opus 5.5 review 24/10/26: 14/14 gaps sound; added accepted alt though (gap 1). Awaiting Adam approval."
+ "review": "Opus 5.5 review 24/10/26: 14/14 gaps sound; added accepted alt though (gap 1). Approved by Adam 24/10/26.",
+ "fb": true
 }

@@ -20,7 +20,7 @@ SWAPS = [
     ('r.at.toLocaleString("ms-MY");', 'r.at.toLocaleString("en-GB");'),
 ]
 EMBED = '<script id="kloz-embedded" type="application/json">null</script>'
-KEEP = ["t", "q", "lv", "lang", "mode", "wb", "lab", "dr", "P", "A", "C", "CL", "N", "X", "ch"]
+KEEP = ["t", "q", "lv", "lang", "mode", "wb", "fb", "lab", "dr", "P", "A", "C", "CL", "N", "X", "ch"]
 
 
 def check(d, name):
