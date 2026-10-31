@@ -1,0 +1,174 @@
+{
+ "v": 1,
+ "cats": {
+  "bm": [
+   {
+    "id": "KN",
+    "label": "Kata nama",
+    "short": "KN",
+    "slot": 1,
+    "kind": "class"
+   },
+   {
+    "id": "KK",
+    "label": "Kata kerja",
+    "short": "KK",
+    "slot": 2,
+    "kind": "class"
+   },
+   {
+    "id": "KA",
+    "label": "Kata adjektif",
+    "short": "KA",
+    "slot": 3,
+    "kind": "class"
+   },
+   {
+    "id": "KT",
+    "label": "Kata tugas",
+    "short": "KT",
+    "slot": 4,
+    "kind": "class"
+   },
+   {
+    "id": "pw",
+    "label": "Penanda wacana",
+    "short": "PW",
+    "slot": 5,
+    "kind": "lens"
+   },
+   {
+    "id": "pb",
+    "label": "Peribahasa & ungkapan",
+    "short": "PB",
+    "slot": 6,
+    "kind": "lens"
+   },
+   {
+    "id": "kt",
+    "label": "Kosa kata tinggi",
+    "short": "KKT",
+    "slot": 7,
+    "kind": "lens"
+   },
+   {
+    "id": "tb",
+    "label": "Tatabahasa (kata sendi)",
+    "short": "TB",
+    "slot": 4,
+    "kind": "lens"
+   }
+  ],
+  "en": [
+   {
+    "id": "N",
+    "label": "Nouns",
+    "short": "N",
+    "slot": 1,
+    "kind": "class"
+   },
+   {
+    "id": "V",
+    "label": "Verbs",
+    "short": "V",
+    "slot": 2,
+    "kind": "class"
+   },
+   {
+    "id": "ADJ",
+    "label": "Adjectives",
+    "short": "ADJ",
+    "slot": 3,
+    "kind": "class"
+   },
+   {
+    "id": "ADV",
+    "label": "Adverbs",
+    "short": "ADV",
+    "slot": 6,
+    "kind": "class"
+   },
+   {
+    "id": "FW",
+    "label": "Function words",
+    "short": "FW",
+    "slot": 4,
+    "kind": "class"
+   },
+   {
+    "id": "pw",
+    "label": "Connectives",
+    "short": "CON",
+    "slot": 5,
+    "kind": "lens"
+   },
+   {
+    "id": "kt",
+    "label": "Key vocabulary",
+    "short": "VOC",
+    "slot": 7,
+    "kind": "lens"
+   },
+   {
+    "id": "tb",
+    "label": "Grammar",
+    "short": "GR",
+    "slot": 4,
+    "kind": "lens"
+   }
+  ]
+ },
+ "labels": {
+  "KT": "Kata tugas",
+  "KT.sendi": "Kata sendi nama",
+  "KN": "Kata nama",
+  "KN.am": "Kata nama am",
+  "KK": "Kata kerja",
+  "KK.ttr": "Kata kerja tak transitif",
+  "KK.ttr.pelengkap": "Kata kerja tak transitif berpelengkap",
+  "KA": "Kata adjektif",
+  "KA.waktu": "Kata adjektif waktu",
+  "KN.khas": "Kata nama khas",
+  "KK.ttr.tanpa": "Kata kerja tak transitif tanpa pelengkap",
+  "KT.arah": "Kata arah",
+  "KT.nafi": "Kata nafi",
+  "KT.penegas": "Kata penegas",
+  "KK.tr": "Kata kerja transitif",
+  "KK.tr.aktif": "Kata kerja transitif aktif",
+  "KT.hubung": "Kata hubung",
+  "KT.hubung.gabungan": "Kata hubung gabungan",
+  "KT.bilangan": "Kata bilangan",
+  "KT.bilangan.taktentu": "Kata bilangan tak tentu",
+  "KA.sifat": "Kata adjektif sifatan / keadaan",
+  "FRASA": "Frasa (penanda wacana / ungkapan)",
+  "KT.hubung.relatif": "Kata hubung pancangan relatif",
+  "KA.ukuran": "Kata adjektif ukuran",
+  "KN.gn": "Kata ganti nama",
+  "KN.gn.diri1": "Kata ganti nama diri pertama",
+  "KK.tr.pasif": "Kata kerja pasif",
+  "KT.hubung.keterangan": "Kata hubung pancangan keterangan",
+  "KT.bantu": "Kata bantu",
+  "KT.bantu.aspek": "Kata bantu aspek",
+  "KT.bilangan.himpunan": "Kata bilangan himpunan",
+  "KT.hubung.komplemen": "Kata hubung pancangan komplemen",
+  "KN.gn.diri3": "Kata ganti nama diri ketiga",
+  "KT.pemeri": "Kata pemeri",
+  "KT.penguat": "Kata penguat",
+  "KT.penguat.bebas": "Kata penguat bebas",
+  "KT.bantu.ragam": "Kata bantu ragam",
+  "KN.gn.tunjuk": "Kata ganti nama tunjuk",
+  "KN.gn.tunjuk.umum": "Kata ganti nama tunjuk umum",
+  "KA.perasaan": "Kata adjektif perasaan",
+  "KT.adverba": "Kata adverba",
+  "KN.pb": "Penjodoh bilangan",
+  "KA.warna": "Kata adjektif warna",
+  "KA.pancaindera": "Kata adjektif pancaindera",
+  "KT.penguat.hadapan": "Kata penguat hadapan",
+  "KT.bilangan.tingkat": "Kata bilangan tingkat (ordinal)",
+  "KA.jarak": "Kata adjektif jarak",
+  "KN.gn.tunjuk.tempat": "Kata ganti nama tunjuk tempat",
+  "KT.bilangan.tentu": "Kata bilangan tentu",
+  "KA.cara": "Kata adjektif cara"
+ },
+ "essays": []
+}

@@ -1,0 +1,2022 @@
+{
+ "id": "bm-perihal-taman-eko-rimba",
+ "lang": "bm",
+ "title": "Keindahan Alam di Taman Eko Rimba",
+ "level": "kssm-2",
+ "jenis": "perihal",
+ "soalan": "Pada hujung minggu yang lalu, anda dan keluarga telah berkunjung ke sebuah kawasan rekreasi yang terkenal dengan keindahan alam semula jadinya. Perihalkan suasana dan keindahan alam semula jadi yang anda lihat sepanjang berada di kawasan rekreasi tersebut.",
+ "sumber": "Claude draft 2026-10-31",
+ "status": "draf",
+ "umpan": [
+  "mengutip",
+  "menyampaikan",
+  "untuk",
+  "memberi"
+ ],
+ "nogap": [],
+ "cabaran": "Tanpa melihat teks, tulis satu perenggan perihal tentang tempat yang pernah kamu lawati. Gunakan sekurang-kurangnya tiga pancaindera: lihat, dengar dan rasa.",
+ "paras": [
+  [
+   0,
+   " ",
+   1,
+   " ",
+   2,
+   " ",
+   3,
+   ", ",
+   4,
+   " ",
+   5,
+   " ",
+   6,
+   " ",
+   7,
+   " ",
+   8,
+   " ",
+   9,
+   " ",
+   10,
+   " ",
+   11,
+   ", ",
+   12,
+   ". ",
+   13,
+   " ",
+   14,
+   " ",
+   15,
+   " ",
+   16,
+   " ",
+   17,
+   " ",
+   18,
+   " ",
+   19,
+   " ",
+   20,
+   " ",
+   21,
+   ". ",
+   22,
+   " ",
+   23,
+   " ",
+   24,
+   " ",
+   25,
+   " ",
+   26,
+   ", ",
+   27,
+   " ",
+   28,
+   " ",
+   29,
+   " ",
+   30,
+   " ",
+   31,
+   " ",
+   32,
+   " ",
+   33,
+   " ",
+   34,
+   " ",
+   35,
+   ". ",
+   36,
+   " ",
+   37,
+   " ",
+   38,
+   " ",
+   39,
+   " ",
+   40,
+   " ",
+   41,
+   " ",
+   42,
+   "."
+  ],
+  [
+   43,
+   " ",
+   44,
+   " ",
+   45,
+   " ",
+   46,
+   " ",
+   47,
+   ", ",
+   48,
+   " ",
+   49,
+   " ",
+   50,
+   " ",
+   51,
+   " ",
+   52,
+   " ",
+   53,
+   " ",
+   54,
+   " ",
+   55,
+   ". ",
+   56,
+   " ",
+   57,
+   " ",
+   58,
+   " ",
+   59,
+   " ",
+   60,
+   " ",
+   61,
+   " ",
+   62,
+   " ",
+   63,
+   " ",
+   64,
+   " ",
+   65,
+   " ",
+   66,
+   " ",
+   67,
+   " ",
+   68,
+   " ",
+   69,
+   ". ",
+   70,
+   " ",
+   71,
+   " ",
+   72,
+   " ",
+   73,
+   " ",
+   74,
+   " ",
+   75,
+   " ",
+   76,
+   " ",
+   77,
+   " ",
+   78,
+   ". ",
+   79,
+   " ",
+   80,
+   " ",
+   81,
+   " ",
+   82,
+   ", ",
+   83,
+   " ",
+   84,
+   " ",
+   85,
+   " ",
+   86,
+   " ",
+   87,
+   ". ",
+   88,
+   " ",
+   89,
+   " ",
+   90,
+   " ",
+   91,
+   " ",
+   92,
+   " ",
+   93,
+   " ",
+   94,
+   " ",
+   95,
+   " ",
+   96,
+   "."
+  ],
+  [
+   97,
+   " ",
+   98,
+   " ",
+   99,
+   " ",
+   100,
+   " ",
+   101,
+   " ",
+   102,
+   ", ",
+   103,
+   " ",
+   104,
+   " ",
+   105,
+   " ",
+   106,
+   " ",
+   107,
+   ". ",
+   108,
+   " ",
+   109,
+   " ",
+   110,
+   " ",
+   111,
+   " ",
+   112,
+   " ",
+   113,
+   " ",
+   114,
+   " ",
+   115,
+   " ",
+   116,
+   " ",
+   117,
+   " ",
+   118,
+   ". ",
+   119,
+   " ",
+   120,
+   " ",
+   121,
+   " ",
+   122,
+   " ",
+   123,
+   " ",
+   124,
+   " ",
+   125,
+   ". ",
+   126,
+   " ",
+   127,
+   " ",
+   128,
+   " ",
+   129,
+   " ",
+   130,
+   " ",
+   131,
+   " ",
+   132,
+   " ",
+   133,
+   "."
+  ],
+  [
+   134,
+   " ",
+   135,
+   " ",
+   136,
+   " ",
+   137,
+   " ",
+   138,
+   " ",
+   139,
+   " ",
+   140,
+   ". ",
+   141,
+   " ",
+   142,
+   " ",
+   143,
+   " ",
+   144,
+   " ",
+   145,
+   " ",
+   146,
+   ", ",
+   147,
+   " ",
+   148,
+   " ",
+   149,
+   " ",
+   150,
+   " ",
+   151,
+   " ",
+   152,
+   ". ",
+   153,
+   ", ",
+   154,
+   " ",
+   155,
+   " ",
+   156,
+   " ",
+   157,
+   " ",
+   158,
+   " ",
+   159,
+   " ",
+   160,
+   " ",
+   161,
+   " ",
+   162,
+   " ",
+   163,
+   ". ",
+   164,
+   " ",
+   165,
+   " ",
+   166,
+   " ",
+   167,
+   " ",
+   168,
+   " ",
+   169,
+   " ",
+   170,
+   " ",
+   171,
+   " ",
+   172,
+   " ",
+   173,
+   " ",
+   174,
+   "."
+  ],
+  [
+   175,
+   " ",
+   176,
+   " ",
+   177,
+   ", ",
+   178,
+   " ",
+   179,
+   " ",
+   180,
+   ". ",
+   181,
+   " ",
+   182,
+   " ",
+   183,
+   " ",
+   184,
+   " ",
+   185,
+   " ",
+   186,
+   " ",
+   187,
+   " ",
+   188,
+   " ",
+   189,
+   " ",
+   190,
+   " ",
+   191,
+   ". ",
+   192,
+   " ",
+   193,
+   " ",
+   194,
+   " ",
+   195,
+   " ",
+   196,
+   " ",
+   197,
+   " ",
+   198,
+   " ",
+   199,
+   " ",
+   200,
+   " ",
+   201,
+   " ",
+   202,
+   " ",
+   203,
+   " ",
+   204,
+   ". ",
+   205,
+   " ",
+   206,
+   " ",
+   207,
+   " ",
+   208,
+   " ",
+   209,
+   " ",
+   210,
+   "."
+  ],
+  [
+   211,
+   " ",
+   212,
+   " ",
+   213,
+   " ",
+   214,
+   " ",
+   215,
+   " ",
+   216,
+   " ",
+   217,
+   ", ",
+   218,
+   " ",
+   219,
+   " ",
+   220,
+   " ",
+   221,
+   " ",
+   222,
+   " ",
+   223,
+   " ",
+   224,
+   " ",
+   225,
+   " ",
+   226,
+   " ",
+   227,
+   " ",
+   228,
+   ". ",
+   229,
+   " ",
+   230,
+   " ",
+   231,
+   " ",
+   232,
+   " ",
+   233,
+   " ",
+   234,
+   " ",
+   235,
+   " ",
+   236,
+   " ",
+   237,
+   " ",
+   238,
+   " ",
+   239,
+   " ",
+   240,
+   " ",
+   241,
+   " ",
+   242,
+   " ",
+   243,
+   " ",
+   244,
+   " ",
+   245,
+   " ",
+   246,
+   " ",
+   247,
+   "."
+  ]
+ ],
+ "units": [
+  {
+   "t": "Pada",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "hujung minggu",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "lalu",
+   "k": "KA.waktu",
+   "y": "S"
+  },
+  {
+   "t": "saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "keluarga",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "berkunjung",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "ke",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "Taman Eko Rimba Komanwel",
+   "k": "KN.khas",
+   "y": "T"
+  },
+  {
+   "t": "di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "Rawang",
+   "k": "KN.khas",
+   "y": "T"
+  },
+  {
+   "t": "Selangor",
+   "k": "KN.khas",
+   "y": "T"
+  },
+  {
+   "t": "Kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "berkhemah",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "situ",
+   "k": "KN.gn.tunjuk.tempat",
+   "y": "S"
+  },
+  {
+   "t": "selama",
+   "k": "KT.sendi",
+   "y": "S",
+   "o": "selama + tempoh masa (berapa lama)"
+  },
+  {
+   "t": "dua",
+   "k": "KT.bilangan.tentu",
+   "y": "T"
+  },
+  {
+   "t": "hari",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "satu",
+   "k": "KT.bilangan.tentu",
+   "y": "T"
+  },
+  {
+   "t": "malam",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Sebaik sahaja",
+   "k": "KT.hubung.keterangan",
+   "y": "T",
+   "o": "frasa kata hubung (as soon as)"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "turun",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "dari",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "kereta",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "angin",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "pagi",
+   "k": "KN.am",
+   "y": "T",
+   "o": "kata nama masa (abstrak)"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "segar",
+   "k": "KA.sifat",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "nyaman",
+   "k": "KA.sifat",
+   "y": "T"
+  },
+  {
+   "t": "menyapa",
+   "k": "KK.tr.aktif",
+   "y": "T",
+   "o": "personifikasi: angin seolah-olah menegur kami"
+  },
+  {
+   "t": "wajah",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "Di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "hadapan",
+   "k": "KT.arah",
+   "y": "T"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "terbentang",
+   "k": "KK.ttr.tanpa",
+   "y": "S"
+  },
+  {
+   "t": "hutan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "hijau",
+   "k": "KA.warna",
+   "y": "T"
+  },
+  {
+   "t": "sejauh mata memandang",
+   "k": "FRASA",
+   "y": "S",
+   "o": "ungkapan: seluas yang dapat dilihat"
+  },
+  {
+   "t": "Setelah",
+   "k": "KT.hubung.keterangan",
+   "y": "T"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "selesai",
+   "k": "KK.ttr.pelengkap",
+   "y": "R"
+  },
+  {
+   "t": "mendirikan",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "khemah",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "ayah",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "membawa",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "menyusuri",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "denai",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "ke",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "tepi",
+   "k": "KT.arah",
+   "y": "T"
+  },
+  {
+   "t": "sungai",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Air",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "sungai",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "sungguh",
+   "k": "KT.penguat.hadapan",
+   "y": "T"
+  },
+  {
+   "t": "jernih",
+   "k": "KA.sifat",
+   "y": "S"
+  },
+  {
+   "t": "sehingga",
+   "k": "KT.hubung.keterangan",
+   "y": "T"
+  },
+  {
+   "t": "batu-batan",
+   "k": "KN.am",
+   "y": "T",
+   "o": "kata ganda berimbuhan"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "ikan-ikan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "kecil",
+   "k": "KA.ukuran",
+   "y": "T"
+  },
+  {
+   "t": "di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "dasarnya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "jelas",
+   "k": "KA.sifat",
+   "y": "R"
+  },
+  {
+   "t": "kelihatan",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "Sungai",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "mengalir",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "perlahan",
+   "k": "KA.cara",
+   "y": "S"
+  },
+  {
+   "t": "dengan",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "bunyi",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "gemercik",
+   "k": "KN.am",
+   "y": "R",
+   "o": "bunyi air mengalir; semak ejaan PRPM"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "mengasyikkan",
+   "k": "KK.tr.aktif",
+   "y": "R",
+   "o": "meN-...-kan berfungsi seperti adjektif"
+  },
+  {
+   "t": "Apabila",
+   "k": "KT.hubung.keterangan",
+   "y": "T"
+  },
+  {
+   "t": "saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "mencelupkan",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "tangan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "airnya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "terasa",
+   "k": "KK.ttr.pelengkap",
+   "y": "S"
+  },
+  {
+   "t": "sejuk",
+   "k": "KA.pancaindera",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "menyegarkan",
+   "k": "KK.tr.aktif",
+   "y": "R",
+   "o": "meN-...-kan berfungsi seperti adjektif"
+  },
+  {
+   "t": "Cahaya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "matahari",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "pagi",
+   "k": "KN.am",
+   "y": "T",
+   "o": "kata nama masa (abstrak)"
+  },
+  {
+   "t": "menyinari",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "sungai",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "sehingga",
+   "k": "KT.hubung.keterangan",
+   "y": "T"
+  },
+  {
+   "t": "permukaannya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "berkilauan",
+   "k": "KK.ttr.tanpa",
+   "y": "S"
+  },
+  {
+   "t": "Di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "kiri",
+   "k": "KT.arah",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "kanan",
+   "k": "KT.arah",
+   "y": "T"
+  },
+  {
+   "t": "denai",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "pohon-pohon",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "tinggi",
+   "k": "KA.ukuran",
+   "y": "T"
+  },
+  {
+   "t": "berdiri",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "teguh",
+   "k": "KA.sifat",
+   "y": "S"
+  },
+  {
+   "t": "Dedaunannya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "rimbun",
+   "k": "KA.sifat",
+   "y": "T"
+  },
+  {
+   "t": "menjadi",
+   "k": "KK.ttr.pelengkap",
+   "y": "T"
+  },
+  {
+   "t": "payung",
+   "k": "KN.am",
+   "y": "T",
+   "o": "kiasan: pelindung"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "melindungi",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "daripada",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "terik",
+   "k": "KA.sifat",
+   "y": "S",
+   "o": "terik matahari = panas matahari yang amat sangat"
+  },
+  {
+   "t": "matahari",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Hanya",
+   "k": "KT.penegas",
+   "y": "S"
+  },
+  {
+   "t": "sedikit",
+   "k": "KT.bilangan.taktentu",
+   "y": "T"
+  },
+  {
+   "t": "cahaya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "mampu",
+   "k": "KT.bantu.ragam",
+   "y": "S"
+  },
+  {
+   "t": "menembusi",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "celah-celahnya",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Bau",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "daun",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "tanah",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "lembap",
+   "k": "KA.pancaindera",
+   "y": "S"
+  },
+  {
+   "t": "memenuhi",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "udara",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Hutan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "juga",
+   "k": "KT.penegas",
+   "y": "T"
+  },
+  {
+   "t": "dipenuhi",
+   "k": "KK.tr.pasif",
+   "y": "T"
+  },
+  {
+   "t": "pelbagai",
+   "k": "KT.bilangan.taktentu",
+   "y": "T"
+  },
+  {
+   "t": "bunyi",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "alam",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Kicauan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "burung",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "bersahut-sahutan",
+   "k": "KK.ttr.tanpa",
+   "y": "S"
+  },
+  {
+   "t": "dari",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "pucuk",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "pokok",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "manakala",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "bunyi",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "riang-riang",
+   "k": "KN.am",
+   "y": "T",
+   "o": "serangga hutan yang berbunyi nyaring pada siang hari"
+  },
+  {
+   "t": "kedengaran",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "tanpa",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "henti",
+   "k": "KK.ttr.tanpa",
+   "y": "R"
+  },
+  {
+   "t": "Sesekali",
+   "k": "KT.adverba",
+   "y": "R",
+   "o": "kata keterangan kekerapan (once in a while)"
+  },
+  {
+   "t": "kami",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "dapat",
+   "k": "KT.bantu.ragam",
+   "y": "T"
+  },
+  {
+   "t": "melihat",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "sekumpulan",
+   "k": "KN.pb",
+   "y": "S",
+   "o": "se- + penjodoh bilangan kumpulan"
+  },
+  {
+   "t": "monyet",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "bergayut",
+   "k": "KK.ttr.tanpa",
+   "y": "S"
+  },
+  {
+   "t": "dari",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "dahan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "ke",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "dahan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Suasana",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "membuat",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "berasa",
+   "k": "KK.ttr.pelengkap",
+   "y": "T"
+  },
+  {
+   "t": "seolah-olah",
+   "k": "KT.hubung.keterangan",
+   "y": "R"
+  },
+  {
+   "t": "berada",
+   "k": "KK.ttr.pelengkap",
+   "y": "T"
+  },
+  {
+   "t": "di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "dunia",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "lain",
+   "k": "KA.sifat",
+   "y": "S"
+  },
+  {
+   "t": "Pada",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "waktu",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "petang",
+   "k": "KN.am",
+   "y": "T",
+   "o": "kata nama masa (abstrak)"
+  },
+  {
+   "t": "angin",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "sepoi-sepoi bahasa",
+   "k": "FRASA",
+   "y": "S",
+   "o": "ungkapan: angin yang bertiup lembut"
+  },
+  {
+   "t": "bertiup",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "Kawasan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "bersih",
+   "k": "KA.sifat",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "bebas",
+   "k": "KA.sifat",
+   "y": "T"
+  },
+  {
+   "t": "daripada",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "sampah",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "kerana",
+   "k": "KT.hubung.keterangan",
+   "y": "T"
+  },
+  {
+   "t": "pengunjung",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "mematuhi",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "peraturan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "duduk",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  },
+  {
+   "t": "di",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "atas",
+   "k": "KT.arah",
+   "y": "T"
+  },
+  {
+   "t": "sebuah",
+   "k": "KN.pb",
+   "y": "S",
+   "o": "se- (satu) + penjodoh bilangan buah"
+  },
+  {
+   "t": "batu",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "besar",
+   "k": "KA.ukuran",
+   "y": "T"
+  },
+  {
+   "t": "sambil",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "menikmati",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "keindahan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "alam",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "ciptaan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Tuhan",
+   "k": "KN.khas",
+   "y": "S"
+  },
+  {
+   "t": "Hati",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "terasa",
+   "k": "KK.ttr.pelengkap",
+   "y": "S"
+  },
+  {
+   "t": "tenang",
+   "k": "KA.perasaan",
+   "y": "S"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "damai",
+   "k": "KA.perasaan",
+   "y": "S"
+  },
+  {
+   "t": "Kunjungan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "itu",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "bukan",
+   "k": "KT.nafi",
+   "y": "S",
+   "o": "bukan sahaja ... malah: kata hubung berpasangan (DBP)"
+  },
+  {
+   "t": "sahaja",
+   "k": "KT.penegas",
+   "y": "S"
+  },
+  {
+   "t": "menenangkan",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "fikiran",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "malah",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "memberi",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "peluang",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "untuk",
+   "k": "KT.hubung.komplemen",
+   "y": "S",
+   "o": "peluang untuk ...: klausa melengkapkan kata nama"
+  },
+  {
+   "t": "menimba",
+   "k": "KK.tr.aktif",
+   "y": "T"
+  },
+  {
+   "t": "ilmu",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "tentang",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "flora",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "dan",
+   "k": "KT.hubung.gabungan",
+   "y": "T"
+  },
+  {
+   "t": "fauna",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "Saya",
+   "k": "KN.gn.diri1",
+   "y": "T"
+  },
+  {
+   "t": "berharap",
+   "k": "KK.ttr.pelengkap",
+   "y": "T"
+  },
+  {
+   "t": "kawasan",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "ini",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "terus",
+   "k": "KT.adverba",
+   "y": "R"
+  },
+  {
+   "t": "dipelihara",
+   "k": "KK.tr.pasif",
+   "y": "T"
+  },
+  {
+   "t": "supaya",
+   "k": "KT.hubung.keterangan",
+   "y": "T"
+  },
+  {
+   "t": "khazanah",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "alam",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "yang",
+   "k": "KT.hubung.relatif",
+   "y": "T"
+  },
+  {
+   "t": "tidak",
+   "k": "KT.nafi",
+   "y": "T"
+  },
+  {
+   "t": "ternilai",
+   "k": "KA.sifat",
+   "y": "R"
+  },
+  {
+   "t": "ini",
+   "k": "KN.gn.tunjuk.umum",
+   "y": "T"
+  },
+  {
+   "t": "dapat",
+   "k": "KT.bantu.ragam",
+   "y": "T"
+  },
+  {
+   "t": "dinikmati",
+   "k": "KK.tr.pasif",
+   "y": "T"
+  },
+  {
+   "t": "oleh",
+   "k": "KT.sendi",
+   "y": "T"
+  },
+  {
+   "t": "generasi",
+   "k": "KN.am",
+   "y": "T"
+  },
+  {
+   "t": "akan",
+   "k": "KT.bantu.aspek",
+   "y": "T"
+  },
+  {
+   "t": "datang",
+   "k": "KK.ttr.tanpa",
+   "y": "T"
+  }
+ ],
+ "lens": [
+  {
+   "a": 7,
+   "b": 7,
+   "l": "kt",
+   "alt": [
+    "melawat",
+    "pergi"
+   ],
+   "o": "Bermaksud pergi melawat sesuatu tempat; selalu diikuti 'ke'."
+  },
+  {
+   "a": 17,
+   "b": 17,
+   "l": "tb",
+   "alt": [],
+   "o": "'Selama' menyatakan tempoh masa (berapa lama). Jangan tulis 'untuk dua hari'; 'untuk' menyatakan tujuan."
+  },
+  {
+   "a": 22,
+   "b": 22,
+   "l": "pw",
+   "alt": [
+    "Sejurus selepas",
+    "Sebaik",
+    "Apabila",
+    "Setelah"
+   ],
+   "o": "Penanda masa: sesuatu berlaku tepat selepas perkara lain."
+  },
+  {
+   "a": 33,
+   "b": 33,
+   "l": "kt",
+   "alt": [
+    "membelai"
+   ],
+   "o": "Personifikasi: angin digambarkan seperti manusia yang menyentuh dan menegur wajah kami."
+  },
+  {
+   "a": 39,
+   "b": 39,
+   "l": "kt",
+   "alt": [
+    "terhampar"
+   ],
+   "o": "Bermaksud terbuka luas di hadapan mata."
+  },
+  {
+   "a": 42,
+   "b": 42,
+   "l": "pb",
+   "alt": [
+    "saujana mata memandang"
+   ],
+   "o": "Ungkapan yang bermaksud sangat luas, seluas yang dapat dilihat."
+  },
+  {
+   "a": 46,
+   "b": 46,
+   "l": "kt",
+   "alt": [
+    "memasang"
+   ],
+   "o": "Khemah 'didirikan'. Jangan tulis 'menyampaikan khemah'; 'menyampaikan' untuk mesej atau ucapan."
+  },
+  {
+   "a": 49,
+   "b": 49,
+   "l": "kt",
+   "alt": [
+    "mengajak",
+    "memimpin"
+   ],
+   "o": "Bermaksud pergi bersama-sama seseorang ke sesuatu tempat. 'Memberi' bermaksud menyerahkan sesuatu."
+  },
+  {
+   "a": 51,
+   "b": 51,
+   "l": "kt",
+   "alt": [
+    "melalui"
+   ],
+   "o": "Bermaksud berjalan mengikut sepanjang denai atau sungai."
+  },
+  {
+   "a": 60,
+   "b": 60,
+   "l": "kt",
+   "alt": [],
+   "o": "Bermaksud sangat bersih sehingga dasar air dapat dilihat."
+  },
+  {
+   "a": 25,
+   "b": 25,
+   "l": "tb",
+   "alt": [],
+   "o": "'Dari' menunjukkan tempat atau arah (turun dari kereta)."
+  },
+  {
+   "a": 96,
+   "b": 96,
+   "l": "kt",
+   "alt": [
+    "berkilau-kilauan",
+    "berkilau",
+    "bergemerlapan",
+    "bersinar-sinar"
+   ],
+   "o": "Bermaksud memancarkan cahaya yang bersinar-sinar."
+  },
+  {
+   "a": 110,
+   "b": 110,
+   "l": "kt",
+   "alt": [
+    "lebat"
+   ],
+   "o": "Bermaksud daunnya banyak dan rapat."
+  },
+  {
+   "a": 116,
+   "b": 116,
+   "l": "tb",
+   "alt": [],
+   "o": "Selepas 'melindungi' gunakan 'daripada', bukan 'dari'."
+  },
+  {
+   "a": 124,
+   "b": 124,
+   "l": "kt",
+   "alt": [
+    "menerobos"
+   ],
+   "o": "Bermaksud masuk melalui sesuatu hingga ke sebelah lagi."
+  },
+  {
+   "a": 143,
+   "b": 143,
+   "l": "kt",
+   "alt": [
+    "bersahutan",
+    "sahut-menyahut"
+   ],
+   "o": "Bermaksud berbunyi silih berganti, seperti saling menjawab."
+  },
+  {
+   "a": 147,
+   "b": 147,
+   "l": "pw",
+   "alt": [],
+   "o": "Penanda wacana yang menghubungkan dua klausa setara yang dibandingkan."
+  },
+  {
+   "a": 159,
+   "b": 159,
+   "l": "kt",
+   "alt": [
+    "bergayutan",
+    "berayun",
+    "melompat"
+   ],
+   "o": "Bermaksud berpaut atau bergantung pada dahan."
+  },
+  {
+   "a": 168,
+   "b": 168,
+   "l": "tb",
+   "alt": [],
+   "o": "'Berasa' untuk perasaan yang dialami. 'Merasa' untuk merasai sesuatu, seperti makanan."
+  },
+  {
+   "a": 179,
+   "b": 179,
+   "l": "pb",
+   "alt": [],
+   "o": "Ungkapan untuk angin yang bertiup lembut dan menyenangkan."
+  },
+  {
+   "a": 190,
+   "b": 190,
+   "l": "kt",
+   "alt": [
+    "mengikut"
+   ],
+   "o": "Kita 'mematuhi' peraturan, iaitu menurut peraturan dengan taat."
+  },
+  {
+   "a": 218,
+   "b": 218,
+   "l": "pw",
+   "alt": [
+    "bahkan",
+    "malahan",
+    "tetapi juga"
+   ],
+   "o": "Pasangan 'bukan sahaja ... malah' menambah idea yang lebih kuat."
+  },
+  {
+   "a": 223,
+   "b": 223,
+   "l": "kt",
+   "alt": [
+    "menambah",
+    "mencari",
+    "menuntut",
+    "mendalami"
+   ],
+   "o": "Kita 'menimba ilmu'. Jangan tulis 'mengutip ilmu'; 'mengutip' untuk sampah atau derma."
+  },
+  {
+   "a": 236,
+   "b": 237,
+   "l": "pb",
+   "alt": [
+    "harta alam",
+    "kekayaan alam",
+    "warisan alam"
+   ],
+   "o": "Ungkapan yang bermaksud harta atau kekayaan alam semula jadi."
+  },
+  {
+   "a": 245,
+   "b": 247,
+   "l": "kt",
+   "alt": [
+    "generasi yang akan datang",
+    "generasi masa hadapan"
+   ],
+   "o": "Bermaksud orang yang akan hidup pada masa hadapan."
+  }
+ ]
+}

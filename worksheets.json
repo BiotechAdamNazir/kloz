@@ -1,0 +1,9 @@
+{
+ "about": "Hosted BM worksheets. Each entry becomes w/<id>.json, opened at https://biotechadamnazir.github.io/kloz/#w=<id>. Settings mirror Kloz Studio: pref = word classes (KN, KK, KA, KT or sub-types), lens = pw, pb, kt, tb; fin/fout = gaps forced in/out by Studio key (u<unit> or L<lens index>). No student names here: this repo is public.",
+ "worksheets": [
+  {"id": "taman-eko-rimba-fokus", "essay": "bm-perihal-taman-eko-rimba", "pref": [], "lens": ["kt", "tb"], "count": 22, "seed": 1, "mode": "check", "wb": true, "lab": false,
+   "note": "Perihal essay; gaps on word choice and kata sendi (selama, mendirikan, membawa, menimba, dari/daripada). Decoys are near-misses."},
+  {"id": "taman-eko-rimba-skema", "essay": "bm-perihal-taman-eko-rimba", "pref": [], "lens": ["kt", "tb"], "count": 22, "seed": 1, "mode": "key", "wb": true, "lab": false,
+   "note": "Same sheet, with Tunjuk jawapan after checking (for review after the first attempt)."}
+ ]
+}
