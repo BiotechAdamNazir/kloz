@@ -1,9 +1,409 @@
 {
  "about": "Hosted BM worksheets. Each entry becomes w/<id>.json, opened at https://biotechadamnazir.github.io/kloz/#w=<id>. Settings mirror Kloz Studio: pref = word classes (KN, KK, KA, KT or sub-types), lens = pw, pb, kt, tb; fin/fout = gaps forced in/out by Studio key (u<unit> or L<lens index>). No student names here: this repo is public.",
  "worksheets": [
-  {"id": "taman-eko-rimba-fokus", "essay": "bm-perihal-taman-eko-rimba", "pref": [], "lens": ["kt", "tb"], "count": 22, "seed": 1, "mode": "check", "wb": true, "lab": false,
-   "note": "Perihal essay; gaps on word choice and kata sendi (selama, mendirikan, membawa, menimba, dari/daripada). Decoys are near-misses."},
-  {"id": "taman-eko-rimba-skema", "essay": "bm-perihal-taman-eko-rimba", "pref": [], "lens": ["kt", "tb"], "count": 22, "seed": 1, "mode": "key", "wb": true, "lab": false,
-   "note": "Same sheet, with Tunjuk jawapan after checking (for review after the first attempt)."}
+  {
+   "id": "taman-eko-rimba-fokus",
+   "essay": "bm-perihal-taman-eko-rimba",
+   "pref": [],
+   "lens": [
+    "kt",
+    "tb"
+   ],
+   "count": 22,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Perihal essay; gaps on word choice and kata sendi (selama, mendirikan, membawa, menimba, dari/daripada). Decoys are near-misses."
+  },
+  {
+   "id": "taman-eko-rimba-skema",
+   "essay": "bm-perihal-taman-eko-rimba",
+   "pref": [],
+   "lens": [
+    "kt",
+    "tb"
+   ],
+   "count": 22,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Same sheet, with Tunjuk jawapan after checking (for review after the first attempt)."
+  },
+  {
+   "id": "bm-cerita-hari-sukan",
+   "essay": "bm-cerita-hari-sukan",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-cerita-hari-sukan-skema",
+   "essay": "bm-cerita-hari-sukan",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-cerita-pelancongan",
+   "essay": "bm-cerita-pelancongan",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-cerita-pelancongan-skema",
+   "essay": "bm-cerita-pelancongan",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-fakta-hidup-sihat-y8",
+   "essay": "bm-fakta-hidup-sihat-y8",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-fakta-hidup-sihat-y8-skema",
+   "essay": "bm-fakta-hidup-sihat-y8",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-fakta-sungai",
+   "essay": "bm-fakta-sungai",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-fakta-sungai-skema",
+   "essay": "bm-fakta-sungai",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-igcse-blog-hari-raya",
+   "essay": "bm-igcse-blog-hari-raya",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 10,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-igcse-blog-hari-raya-skema",
+   "essay": "bm-igcse-blog-hari-raya",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 10,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-kata-yang-tepat",
+   "essay": "bm-kata-yang-tepat",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-kata-yang-tepat-skema",
+   "essay": "bm-kata-yang-tepat",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-laporan-gotong-royong",
+   "essay": "bm-laporan-gotong-royong",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-laporan-gotong-royong-skema",
+   "essay": "bm-laporan-gotong-royong",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-rencana-gaya-hidup-sihat-igcse",
+   "essay": "bm-rencana-gaya-hidup-sihat-igcse",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-rencana-gaya-hidup-sihat-igcse-skema",
+   "essay": "bm-rencana-gaya-hidup-sihat-igcse",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-respons-terhad-membaca",
+   "essay": "bm-respons-terhad-membaca",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 10,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-respons-terhad-membaca-skema",
+   "essay": "bm-respons-terhad-membaca",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 10,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-siri-golongan-kata-1",
+   "essay": "bm-siri-golongan-kata-1",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "bm-siri-golongan-kata-1-skema",
+   "essay": "bm-siri-golongan-kata-1",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "en-article-context-clues",
+   "essay": "en-article-context-clues",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa)."
+  },
+  {
+   "id": "en-article-context-clues-skema",
+   "essay": "en-article-context-clues",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  }
  ]
 }

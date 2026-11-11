@@ -1,0 +1,454 @@
+{
+ "about": "Every Kloz Adam has, in one list. The teacher page (rak/) reads this file each time it opens. Entries with kind 'studio' are refreshed from essays/ by add.py; the rest (Google Docs, English sets, items not yet in this repo) are written by hand. No student names: this repo is public.",
+ "updated": "2026-11-11",
+ "review": "2026-12-11",
+ "stale_after_days": 14,
+ "levels": [
+  {
+   "id": "asas",
+   "label": "Asas (very low BM)",
+   "rank": 1
+  },
+  {
+   "id": "kssr-1",
+   "label": "Tahun 1",
+   "rank": 2
+  },
+  {
+   "id": "kssr-2",
+   "label": "Tahun 2",
+   "rank": 3
+  },
+  {
+   "id": "kssr-3",
+   "label": "Tahun 3",
+   "rank": 4
+  },
+  {
+   "id": "kssr-4",
+   "label": "Tahun 4",
+   "rank": 5
+  },
+  {
+   "id": "kssr-5",
+   "label": "Tahun 5",
+   "rank": 6
+  },
+  {
+   "id": "kssr-6",
+   "label": "Tahun 6",
+   "rank": 7
+  },
+  {
+   "id": "kssm-1",
+   "label": "Tingkatan 1",
+   "rank": 8
+  },
+  {
+   "id": "tahun-8",
+   "label": "Year 8 (weak BM)",
+   "rank": 8.5
+  },
+  {
+   "id": "kssm-2",
+   "label": "Tingkatan 2",
+   "rank": 9
+  },
+  {
+   "id": "kssm-3",
+   "label": "Tingkatan 3",
+   "rank": 10
+  },
+  {
+   "id": "kssm-4",
+   "label": "Tingkatan 4",
+   "rank": 11
+  },
+  {
+   "id": "kssm-5",
+   "label": "Tingkatan 5",
+   "rank": 12
+  },
+  {
+   "id": "igcse",
+   "label": "IGCSE Malay",
+   "rank": 11.5
+  },
+  {
+   "id": "igcse-0472",
+   "label": "IGCSE English",
+   "rank": 11.5
+  }
+ ],
+ "items": [
+  {
+   "id": "bm-cerita-hari-sukan",
+   "made": "2026-11-11",
+   "log": [],
+   "links": {
+    "artifact": "https://claude.ai/artifact/1KH8Srg67Vdti7JxxhB2GG",
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-cerita-hari-sukan",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-cerita-hari-sukan",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-cerita-hari-sukan-skema"
+   },
+   "kind": "studio",
+   "home": "github",
+   "title": "Hari Sukan Sekolah",
+   "lang": "bm",
+   "level": "kssr-4",
+   "jenis": "cerita",
+   "status": "draf",
+   "source": "Claude draft 2026-11-11",
+   "words": 142,
+   "gaps": 20
+  },
+  {
+   "id": "en-article-context-clues",
+   "made": "2026-11-11",
+   "log": [],
+   "note": "The passage teaches context clues while testing them. Text and answer key also in Drive.",
+   "links": {
+    "artifact": "https://claude.ai/artifact/63BqRLXwU681D1Xr8uBCc9",
+    "doc": "https://docs.google.com/document/d/1k3RpAiH3hfMwms5zpDgmFMlriw6Z-go6wbqFqzIBDD4/edit",
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=en-article-context-clues",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=en-article-context-clues",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=en-article-context-clues-skema"
+   },
+   "kind": "studio",
+   "home": "github",
+   "title": "Reading Like a Detective",
+   "lang": "en",
+   "level": "igcse-0472",
+   "jenis": "article",
+   "status": "draf",
+   "source": "Claude draft 11 Nov 2026",
+   "words": 282,
+   "gaps": 20
+  },
+  {
+   "id": "bm-rencana-gaya-hidup-sihat-igcse",
+   "made": "2026-11-05",
+   "log": [],
+   "note": "Same topic as the Year 8 version: a ready pair for two levels.",
+   "links": {
+    "artifact": "https://claude.ai/artifact/5TKaYTWDYfYXJEgJiwUbyx",
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-rencana-gaya-hidup-sihat-igcse",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-rencana-gaya-hidup-sihat-igcse",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-rencana-gaya-hidup-sihat-igcse-skema"
+   },
+   "kind": "studio",
+   "home": "github",
+   "title": "Gaya Hidup Sihat Bermula dengan Diri Sendiri",
+   "lang": "bm",
+   "level": "igcse",
+   "jenis": "rencana",
+   "status": "draf",
+   "source": "Claude draft 5 Nov 2026",
+   "words": 324,
+   "gaps": 20
+  },
+  {
+   "id": "bm-fakta-hidup-sihat-y8",
+   "made": "2026-11-05",
+   "log": [],
+   "note": "Same topic as the IGCSE version: a ready pair for two levels.",
+   "links": {
+    "artifact": "https://claude.ai/artifact/5TKaYTWDYfYXJEgJiwUbyx",
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-fakta-hidup-sihat-y8",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-fakta-hidup-sihat-y8",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-fakta-hidup-sihat-y8-skema"
+   },
+   "kind": "studio",
+   "home": "github",
+   "title": "Hidup Sihat, Hidup Gembira",
+   "lang": "bm",
+   "level": "tahun-8",
+   "jenis": "fakta",
+   "status": "draf",
+   "source": "Claude draft 5 Nov 2026",
+   "words": 255,
+   "gaps": 20
+  },
+  {
+   "id": "bm-perihal-taman-eko-rimba",
+   "made": "2026-10-31",
+   "log": [],
+   "note": "Gaps on word choice and kata sendi (selama, mendirikan, menimba, dari/daripada).",
+   "links": {
+    "artifact": "https://claude.ai/artifact/S41kjoCmSUqzQBqjRhwcLj",
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-perihal-taman-eko-rimba",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=taman-eko-rimba-fokus",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=taman-eko-rimba-skema"
+   },
+   "kind": "studio",
+   "home": "github",
+   "title": "Keindahan Alam di Taman Eko Rimba",
+   "lang": "bm",
+   "level": "kssm-2",
+   "jenis": "perihal",
+   "status": "draf",
+   "source": "Claude draft 2026-10-31",
+   "words": 256,
+   "gaps": 18
+  },
+  {
+   "id": "bm-cerita-pelancongan",
+   "made": "2026-10-21",
+   "log": [],
+   "note": "Published model essay (Pelangi).",
+   "kind": "studio",
+   "home": "github",
+   "title": "Percutian Sekeluarga di Cameron Highlands",
+   "lang": "bm",
+   "level": "kssm-1",
+   "jenis": "cerita-pengalaman",
+   "status": "disahkan",
+   "source": "Pelangi Kertas Model UASA Tg1 (2023)",
+   "words": 259,
+   "gaps": 20,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-cerita-pelancongan",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-cerita-pelancongan",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-cerita-pelancongan-skema"
+   }
+  },
+  {
+   "id": "bm-fakta-sungai",
+   "made": "2026-10-21",
+   "log": [],
+   "note": "Published model essay (Pelangi).",
+   "kind": "studio",
+   "home": "github",
+   "title": "Kepentingan Sungai kepada Manusia",
+   "lang": "bm",
+   "level": "kssm-2",
+   "jenis": "fakta",
+   "status": "disahkan",
+   "source": "Pelangi Kertas Model UASA Tg2 (2023)",
+   "words": 202,
+   "gaps": 20,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-fakta-sungai",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-fakta-sungai",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-fakta-sungai-skema"
+   }
+  },
+  {
+   "id": "bm-igcse-blog-hari-raya",
+   "made": "2026-10-21",
+   "log": [],
+   "kind": "studio",
+   "home": "github",
+   "title": "Hari Raya di Kampung Nenek (blog)",
+   "lang": "bm",
+   "level": "igcse",
+   "jenis": "blog",
+   "status": "draf",
+   "source": "Karangan asal Claude (21 Okt 2026) untuk IGCSE Malay 0546 Paper 4 soalan 3 (sukatan 2025–2027); belum disemak cikgu",
+   "words": 138,
+   "gaps": 9,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-igcse-blog-hari-raya",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-blog-hari-raya",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-blog-hari-raya-skema"
+   }
+  },
+  {
+   "id": "bm-kata-yang-tepat",
+   "made": "2026-10-20",
+   "log": [],
+   "note": "You found some words unnatural in this one. Review before reusing.",
+   "kind": "studio",
+   "home": "github",
+   "title": "Kata yang Tepat",
+   "lang": "bm",
+   "level": "igcse",
+   "jenis": "petikan-bahasa",
+   "status": "draf",
+   "source": "BM version of 'The Right Word' (Claude, 20 Oct 2026)",
+   "words": 270,
+   "gaps": 20,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-kata-yang-tepat",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-kata-yang-tepat",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-kata-yang-tepat-skema"
+   }
+  },
+  {
+   "id": "bm-siri-golongan-kata-1",
+   "made": "2026-10-21",
+   "log": [],
+   "note": "The passage itself teaches the four word classes. First of a possible series.",
+   "kind": "studio",
+   "home": "github",
+   "title": "Empat Keluarga Perkataan (Siri Golongan Kata 1)",
+   "lang": "bm",
+   "level": "kssm-1",
+   "jenis": "petikan-bahasa",
+   "status": "draf",
+   "source": "Petikan asal Claude (21 Okt 2026) berdasarkan Tatabahasa Dewan Edisi Ketiga; belum disemak cikgu",
+   "words": 199,
+   "gaps": 11,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-siri-golongan-kata-1",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-siri-golongan-kata-1",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-siri-golongan-kata-1-skema"
+   }
+  },
+  {
+   "id": "bm-respons-terhad-membaca",
+   "made": "2026-10-21",
+   "log": [],
+   "note": "Short (50 to 80 words), UASA Bahagian A format.",
+   "kind": "studio",
+   "home": "github",
+   "title": "Kebaikan Amalan Membaca",
+   "lang": "bm",
+   "level": "kssm-1",
+   "jenis": "respons-terhad",
+   "status": "draf",
+   "source": "Karangan asal Claude (21 Okt 2026) untuk format UASA Kertas 2 Bahagian A (SRT); belum disemak cikgu",
+   "words": 72,
+   "gaps": 10,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-respons-terhad-membaca",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-respons-terhad-membaca",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-respons-terhad-membaca-skema"
+   }
+  },
+  {
+   "id": "bm-laporan-gotong-royong",
+   "made": "2026-10-21",
+   "log": [],
+   "kind": "studio",
+   "home": "github",
+   "title": "Laporan Program Gotong-royong Membersihkan Kawasan Sekolah",
+   "lang": "bm",
+   "level": "kssm-2",
+   "jenis": "laporan",
+   "status": "draf",
+   "source": "Karangan asal Claude (21 Okt 2026) untuk format UASA Kertas 2 Bahagian B (SRTb); belum disemak cikgu",
+   "words": 268,
+   "gaps": 12,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-laporan-gotong-royong",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-laporan-gotong-royong",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-laporan-gotong-royong-skema"
+   }
+  },
+  {
+   "id": "en-blog-six-rolls",
+   "kind": "set",
+   "home": "github",
+   "title": "Six Rolls, Not Sixteen!",
+   "lang": "en",
+   "level": "igcse-0472",
+   "jenis": "blog",
+   "status": "disahkan",
+   "source": "Original, reviewed 24 Oct 2026",
+   "words": 0,
+   "gaps": 14,
+   "made": "2026-10-24",
+   "log": [],
+   "note": "Grammar and vocabulary gaps with a word box. You approved it on 24 Oct.",
+   "links": {
+    "student": "https://biotechadamnazir.github.io/kloz/en/blog.html"
+   }
+  },
+  {
+   "id": "en-article-lunch-break",
+   "kind": "set",
+   "home": "github",
+   "title": "A Lunch Break with a Difference",
+   "lang": "en",
+   "level": "igcse-0472",
+   "jenis": "article",
+   "status": "disahkan",
+   "source": "Original, reviewed 24 Oct 2026",
+   "words": 0,
+   "gaps": 14,
+   "made": "2026-10-24",
+   "log": [],
+   "note": "Grammar and vocabulary gaps with a word box. You approved it on 24 Oct.",
+   "links": {
+    "student": "https://biotechadamnazir.github.io/kloz/en/article.html"
+   }
+  },
+  {
+   "id": "doc-roblox",
+   "kind": "doc",
+   "home": "drive",
+   "title": "Roblox",
+   "lang": "bm",
+   "level": "asas",
+   "jenis": "cerita",
+   "status": "draf",
+   "source": "Google Doc, 30 Oct 2026",
+   "words": 0,
+   "gaps": 10,
+   "made": "2026-10-30",
+   "log": [],
+   "note": "Editable Google Doc for a phone. About 10 blanks on the most basic words.",
+   "links": {
+    "doc": "https://docs.google.com/document/d/1dgPfd1bm5suLQPF596klFxUVHaiyWsJ4AgPwJCAU8F8/edit"
+   }
+  },
+  {
+   "id": "doc-tf2",
+   "kind": "doc",
+   "home": "drive",
+   "title": "Team Fortress 2",
+   "lang": "bm",
+   "level": "asas",
+   "jenis": "cerita",
+   "status": "draf",
+   "source": "Google Doc, 30 Oct 2026",
+   "words": 0,
+   "gaps": 10,
+   "made": "2026-10-30",
+   "log": [],
+   "note": "Editable Google Doc for a phone. About 10 blanks on the most basic words.",
+   "links": {
+    "doc": "https://docs.google.com/document/d/1TJPLE1hoDZPo9DCCzHsoaGFkIl3Uptiogixh5O8XbVk/edit"
+   }
+  },
+  {
+   "id": "old-respons-terhad-sukan",
+   "kind": "studio",
+   "home": "claude",
+   "title": "Amalan Bersukan",
+   "lang": "bm",
+   "level": "kssm-2",
+   "jenis": "respons-terhad",
+   "status": "draf",
+   "source": "Pelangi Kertas Model UASA Tg2 (2023)",
+   "words": 53,
+   "gaps": 0,
+   "made": "2026-10-21",
+   "log": [],
+   "note": "Lives only in the old Kloz Studio in Claude. It is a published book essay, so it was not copied to this public site.",
+   "links": {
+    "artifact": "https://claude.ai/artifact/32fixiAtFMGRAPmzmKMJW4"
+   }
+  },
+  {
+   "id": "old-surat-bekalan-air",
+   "kind": "studio",
+   "home": "claude",
+   "title": "Surat Aduan Gangguan Bekalan Air",
+   "lang": "bm",
+   "level": "kssm-2",
+   "jenis": "surat-rasmi",
+   "status": "draf",
+   "source": "Pelangi Kertas Model UASA Tg2 (2023)",
+   "words": 234,
+   "gaps": 0,
+   "made": "2026-10-21",
+   "log": [],
+   "note": "Lives only in the old Kloz Studio in Claude. It is a published book essay, so it was not copied to this public site.",
+   "links": {
+    "artifact": "https://claude.ai/artifact/32fixiAtFMGRAPmzmKMJW4"
+   }
+  }
+ ]
+}

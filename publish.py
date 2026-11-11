@@ -29,7 +29,10 @@ def studio_html():
 async def main():
     data, page = studio_html()
     if "studio" in sys.argv:
-        open(f"{ROOT}/studio/kloz-studio.html", "w", encoding="utf-8").write(page)
+        # studio.html is an artifact fragment; hosted on its own it needs a charset and viewport
+        open(f"{ROOT}/studio/kloz-studio.html", "w", encoding="utf-8").write(
+            '<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"></head><body>'
+            + page + "</body></html>")
     order = [e["id"] for e in data["essays"]]
     sheets = json.load(open(f"{ROOT}/worksheets.json", encoding="utf-8"))["worksheets"]
     os.makedirs(f"{ROOT}/w", exist_ok=True)

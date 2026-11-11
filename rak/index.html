@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en" data-look="stabilo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kloz Rak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* ---------- three looks: highlighter pens, chalkboard, exercise book ---------- */
+:root{
+  --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --hand:"Caveat","Bradley Hand","Segoe Print",cursive;
+  --r:14px;
+}
+[data-look="stabilo"]{
+  --bg:#ffffff; --bgfx:radial-gradient(#0d1b3e22 1.2px,transparent 1.3px) 0 0/22px 22px;
+  --ink:#0d1b3e; --soft:#4a5676; --card:#ffffff; --line:#0d1b3e; --lw:2.5px; --ls:solid;
+  --y:#ffe83a; --p:#ff9ccb; --g:#86ecA4; --b:#96cbff;
+  --btn:#0d1b3e; --btnink:#ffffff; --lift:4px; --blank:#1f4fe0; --warn:#e2281b; --ok:#0a8f4c;
+}
+[data-look="papan"]{
+  --bg:#21403a; --bgfx:radial-gradient(ellipse at 20% 0%,#ffffff12,transparent 60%);
+  --ink:#f4f1e4; --soft:#bcd0c6; --card:#294d44; --line:#f4f1e4aa; --lw:2px; --ls:dashed;
+  --y:#f6e27a; --p:#f3a6c4; --g:#a9e6b4; --b:#a8d4f5;
+  --btn:#f6e27a; --btnink:#1c332e; --lift:0px; --blank:#f6e27a; --warn:#ffb4a8; --ok:#a9e6b4;
+}
+[data-look="buku"]{
+  --bg:#fdfdf8; --bgfx:linear-gradient(90deg,transparent 27px,#e2281b55 27px,#e2281b55 29px,transparent 29px),repeating-linear-gradient(#fdfdf8 0 31px,#9ec3ee 31px 32px);
+  --ink:#1b3fa0; --soft:#51679f; --card:#ffffff; --line:#1b3fa0; --lw:1.5px; --ls:solid;
+  --y:#fff3a0; --p:#ffd0e2; --g:#cdf3d6; --b:#d5e8ff;
+  --btn:#1b3fa0; --btnink:#ffffff; --lift:2px; --blank:#e2281b; --warn:#e2281b; --ok:#127a45;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bgfx),var(--bg);background-attachment:fixed;font-size:17px;line-height:1.4;transition:background-color .3s,color .3s}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--blank);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:18px 16px 120px}
+[data-look="buku"] .wrap{padding-left:42px}
+
+/* ---------- header ---------- */
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-size:clamp(2.6rem,9vw,4.4rem);font-weight:800;line-height:.9;margin:0;letter-spacing:-.03em}
+h1 .gap{display:inline-block;min-width:1.7em;border-bottom:.12em solid var(--ink);font-family:var(--hand);font-weight:700;color:var(--blank);text-align:center;letter-spacing:0;transform:translateY(-.02em)}
+.looks{display:flex;gap:8px;align-items:center}
+.looks button{width:38px;height:38px;border-radius:50%;border:var(--lw) solid var(--line);padding:0;position:relative;overflow:hidden}
+.looks button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--bg),0 0 0 6px var(--blank)}
+.lk-stabilo{background:conic-gradient(#ffe83a 0 25%,#ff9ccb 0 50%,#86eca4 0 75%,#96cbff 0)}
+.lk-papan{background:#21403a}
+.lk-buku{background:repeating-linear-gradient(#fdfdf8 0 6px,#9ec3ee 6px 7px)}
+.stamp{margin:12px 0 0;color:var(--soft);font-size:.95rem;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center}
+.stamp b{color:var(--ink)}
+.meter{display:inline-block;width:86px;height:10px;border:1.5px solid var(--line);border-radius:6px;overflow:hidden;vertical-align:middle;margin-right:6px}
+.meter i{display:block;height:100%;background:var(--g);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.stale{background:var(--warn);color:#fff;font-weight:800;padding:2px 9px;border-radius:6px}
+[data-look="papan"] .stale{color:#1c332e}
+.linkbtn{background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+
+/* ---------- layout ---------- */
+.cols{display:grid;gap:26px;margin-top:22px}
+@media(min-width:980px){.cols{grid-template-columns:minmax(0,1fr) 400px;align-items:start}.order{position:sticky;top:14px}}
+h2{font-size:1.35rem;font-weight:800;margin:0 0 10px;letter-spacing:-.01em}
+
+/* ---------- chips ---------- */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:var(--lw) var(--ls) var(--line);background:var(--card);border-radius:999px;padding:8px 14px;font-weight:600;min-height:44px;display:inline-flex;align-items:center;gap:7px;transition:transform .12s,background-color .15s,box-shadow .12s}
+.chip .n{font-size:.8rem;opacity:.7;font-weight:400}
+.chip:active{transform:scale(.95)}
+.chip[aria-pressed="true"]{background:var(--hl,var(--y));color:#0d1b3e;border-style:solid;box-shadow:var(--lift) var(--lift) 0 var(--line);transform:translate(calc(var(--lift)*-.5),calc(var(--lift)*-.5))}
+.chip.mine::before{content:"★"}
+.chip .x{margin-left:2px;border:0;background:none;padding:0 2px;font-weight:800;opacity:.6}
+.c-y{--hl:var(--y)}.c-p{--hl:var(--p)}.c-g{--hl:var(--g)}.c-b{--hl:var(--b)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.seg{display:inline-flex;border:var(--lw) solid var(--line);border-radius:12px;overflow:hidden}
+.seg button{border:0;background:var(--card);padding:9px 14px;min-height:44px;font-weight:600}
+.seg button+button{border-left:var(--lw) solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
+.search{flex:1;min-width:150px;border:var(--lw) solid var(--line);border-radius:12px;padding:9px 12px;min-height:44px;background:var(--card)}
+.search::placeholder{color:var(--soft)}
+
+/* ---------- shelf ---------- */
+.band{margin:22px 0 10px;font-weight:800;font-size:1.05rem;display:flex;align-items:baseline;gap:8px}
+.band span{font-weight:400;color:var(--soft);font-size:.92rem}
+.grid{display:grid;gap:14px;align-items:start;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.card{background:var(--card);border:var(--lw) var(--ls) var(--line);border-radius:var(--r);padding:14px;position:relative;box-shadow:calc(var(--lift)*1.5) calc(var(--lift)*1.5) 0 var(--hl,var(--y));animation:pop .28s cubic-bezier(.2,.9,.3,1.2) both;display:flex;flex-direction:column;gap:8px}
+@keyframes pop{from{opacity:0;transform:scale(.94) translateY(6px)}}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:.82rem}
+.tag{padding:2px 8px;border-radius:6px;font-weight:600;border:1.5px solid var(--line)}
+.tag.lv{background:var(--hl,var(--y));color:#0d1b3e;border-color:transparent}
+.tag.ok{color:var(--ok);border-color:currentColor}
+.tag.dr{border-style:dashed;color:var(--soft)}
+.tag.off{background:var(--warn);color:#fff;border-color:transparent}
+[data-look="papan"] .tag.off{color:#1c332e}
+.card h3{margin:0;font-size:1.3rem;font-weight:800;line-height:1.12;letter-spacing:-.01em}
+.meta{color:var(--soft);font-size:.88rem;margin:0}
+.note{font-family:var(--hand);font-size:1.25rem;line-height:1.1;margin:0;color:var(--blank)}
+.used{font-size:.85rem;margin:0;color:var(--ok);font-weight:600}
+.acts{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+.btn{border:var(--lw) solid var(--line);background:var(--card);border-radius:11px;padding:10px 14px;font-weight:800;min-height:46px;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;text-align:center;transition:transform .1s,box-shadow .1s;box-shadow:var(--lift) var(--lift) 0 var(--line)}
+.btn:active{transform:translate(var(--lift),var(--lift));box-shadow:0 0 0 var(--line)}
+.btn.go{background:var(--btn);color:var(--btnink);flex:1}
+.btn.sm{min-height:42px;padding:8px 12px;font-weight:600;box-shadow:none;font-size:.93rem}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s}
+.more>div{overflow:hidden;display:flex;flex-direction:column;gap:8px}
+.card.open .more{grid-template-rows:1fr}
+.card.open .more>div{padding-top:6px}
+.more .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.logbox{border:1.5px dashed var(--line);border-radius:10px;padding:10px;display:none;flex-direction:column;gap:8px}
+.logbox.on{display:flex}
+.logbox textarea{width:100%;border:1.5px solid var(--line);border-radius:8px;padding:8px;background:var(--card);min-height:60px;resize:vertical}
+.empty{border:var(--lw) dashed var(--line);border-radius:var(--r);padding:22px;text-align:center}
+.empty p{margin:0 0 12px}
+
+/* ---------- order: the request is itself a cloze sentence ---------- */
+.order{background:var(--card);border:var(--lw) var(--ls) var(--line);border-radius:18px;padding:18px;box-shadow:calc(var(--lift)*2) calc(var(--lift)*2) 0 var(--p)}
+.sentence{font-size:1.5rem;font-weight:600;line-height:1.75;margin:4px 0 12px;letter-spacing:-.01em}
+.blank{font-family:var(--hand);font-weight:700;font-size:1.9rem;line-height:1;color:var(--blank);background:transparent;border:0;border-bottom:3px solid var(--ink);border-radius:0;padding:0 4px 1px;max-width:100%;vertical-align:baseline;transition:background-color .2s}
+select.blank{appearance:none;-webkit-appearance:none;cursor:pointer;text-overflow:ellipsis}
+select.blank option{font-family:var(--font);font-size:1rem;color:#0d1b3e;background:#fff}
+input.blank{width:100%;min-width:0}
+input.blank::placeholder{color:var(--soft);opacity:.75;font-size:1.3rem}
+.blank.flash{animation:flash .5s}
+@keyframes flash{from{background:var(--y)}}
+.based{font-size:.9rem;background:var(--y);color:#0d1b3e;border-radius:8px;padding:6px 10px;display:none;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
+.based.on{display:flex}
+.based button{border:0;background:none;font-weight:800;color:#0d1b3e}
+.sub{font-weight:800;font-size:.95rem;margin:14px 0 6px}
+.send{display:grid;gap:8px;margin-top:16px}
+.send .btn.go{font-size:1.15rem;min-height:56px}
+.send .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+details{margin-top:12px}
+summary{cursor:pointer;font-weight:600;min-height:36px;display:flex;align-items:center}
+pre{white-space:pre-wrap;word-break:break-word;font-family:var(--font);font-size:.9rem;background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px;margin:8px 0 0}
+.how{margin-top:34px;border-top:var(--lw) var(--ls) var(--line);padding-top:18px}
+.how ol{margin:8px 0 0;padding-left:22px;max-width:62ch}
+.how li{margin:6px 0}
+.foot{color:var(--soft);font-size:.88rem;margin-top:18px;max-width:70ch}
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:5;font-size:1.05rem}
+@media(min-width:980px){.fab{display:none}}
+#toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--btn);color:var(--btnink);padding:10px 16px;border-radius:10px;font-weight:600;z-index:9;max-width:90vw;text-align:center}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top">
+      <h1>Kloz <span class="gap" id="hgap">Rak</span></h1>
+      <div class="looks" role="group" aria-label="Look">
+        <button class="lk-stabilo" data-look="stabilo" aria-label="Highlighter look" title="Highlighter"></button>
+        <button class="lk-papan" data-look="papan" aria-label="Chalkboard look" title="Chalkboard"></button>
+        <button class="lk-buku" data-look="buku" aria-label="Exercise book look" title="Exercise book"></button>
+      </div>
+    </div>
+    <p class="stamp" id="stamp">Loading the shelf…</p>
+  </header>
+
+  <div class="cols">
+    <main>
+      <h2>Who is in front of you?</h2>
+      <div class="chips" id="presets"></div>
+      <div class="row">
+        <div class="seg" id="langseg" role="group" aria-label="Language">
+          <button data-l="all">Both</button><button data-l="bm">BM</button><button data-l="en">English</button>
+        </div>
+        <input class="search" id="q" type="search" placeholder="Search a topic" aria-label="Search a topic">
+      </div>
+      <div id="shelf" aria-live="polite"></div>
+
+    </main>
+
+    <aside class="order" id="order" aria-labelledby="oh">
+      <h2 id="oh">Nothing fits? Order a new one</h2>
+      <div class="based" id="based"><span id="basedtxt"></span><button id="basedx" aria-label="Clear">✕</button></div>
+      <p class="sentence">
+        A Kloz about <input class="blank" id="o-topic" placeholder="topic (or leave empty)" aria-label="Topic">
+        for <select class="blank" id="o-level" aria-label="Level"></select>
+        in <select class="blank" id="o-lang" aria-label="Language"><option value="bm">BM</option><option value="en">English</option></select>,
+        written as <select class="blank" id="o-jenis" aria-label="Type of writing"></select>,
+        with about <select class="blank" id="o-count" aria-label="Number of blanks"><option>8</option><option>10</option><option>12</option><option>15</option><option>18</option><option>20</option><option>25</option></select> blanks.
+      </p>
+      <p class="sub">Blank out</p>
+      <div class="chips" id="focus"></div>
+      <p class="sub">Give it to me as</p>
+      <div class="chips" id="format"></div>
+      <div class="send">
+        <button class="btn go" id="send">Build in Claude</button>
+        <div class="two">
+          <button class="btn sm" id="send2">Open in browser</button>
+          <button class="btn sm" id="copy">Copy the request</button>
+        </div>
+        <button class="btn sm" id="savepreset">Save these choices as a preset</button>
+      </div>
+      <details><summary>See the message Claude will get</summary><pre id="preview"></pre></details>
+    </aside>
+  </div>
+  <section class="how" id="how">
+    <h2>How a Kloz gets onto this shelf</h2>
+    <ol>
+      <li>You fill the sentence on this page and press <b>Build in Claude</b>. Claude opens with the request already written; you press send.</li>
+      <li>Claude writes and checks the essay, then runs one command (<b>add.py</b>) that saves it to GitHub and lists it here.</li>
+      <li>About a minute later it is on this shelf with a student link. Press <button class="linkbtn" id="refresh2">Check for new Kloz</button> to see it.</li>
+    </ol>
+    <p class="foot">A card marked <b>Not on GitHub</b> only exists inside Claude or Google Drive, so it has no student link yet. Its <b>Save to GitHub</b> button asks Claude to move it.</p>
+    <p class="foot" id="foot"></p>
+  </section>
+</div>
+<button class="btn go fab" id="fab">Order a new Kloz</button>
+<div id="toast" hidden role="status"></div>
+
+<script>
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+function toast(t){const el=$("#toast");el.textContent=t;el.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>el.hidden=true,3200)}
+const MOBILE=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const nice=d=>{const m=/^(\d{4})-(\d\d)-(\d\d)/.exec(d||"");return m?`${+m[3]} ${MONTHS[+m[2]-1]}`:""};
+const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+
+/* ---------- fixed choices ---------- */
+const JENIS={bm:["karangan fakta","cerita","perihal","surat rasmi","laporan","blog","rencana","respons terhad","petikan bahasa"],
+             en:["article","blog post","story","report","letter or email","speech","language passage"]};
+const FOCUS=[["pw","Penanda wacana","Connectives"],["kt","Kosa kata","Key vocabulary"],["tb","Tatabahasa","Grammar"],["pb","Peribahasa","Idioms"],
+             ["KN","Kata nama","Nouns"],["KK","Kata kerja","Verbs"],["KA","Kata adjektif","Adjectives"],["KT","Kata tugas","Function words"]];
+const FORMAT=[["studio","Studio sheet","Kloz Karangan Studio: on-screen sheet, student link, print sheet and answer key"],
+              ["hybrid","Hybrid BM + English","Hybrid karangan: every BM line has its English translation underneath, then made into a Kloz"],
+              ["gdoc","Google Doc for a phone","Editable Google Docs for a phone: the full essay first, then the kloz version, plus a separate teacher answer key"],
+              ["lesson","Topic is the lesson","A passage whose topic is itself the lesson (grammar, vocabulary or word parts), written as part of a series"]];
+const BUILTIN=[
+  {name:"Asas on a phone",level:"asas",lang:"bm",jenis:"cerita",count:"10",focus:["KN","KK"],format:"gdoc"},
+  {name:"Tahun 4",level:"kssr-4",lang:"bm",jenis:"cerita",count:"12",focus:["kt","KK"],format:"studio"},
+  {name:"Tingkatan 1",level:"kssm-1",lang:"bm",jenis:"cerita",count:"15",focus:["pw","kt"],format:"studio"},
+  {name:"Tingkatan 2",level:"kssm-2",lang:"bm",jenis:"karangan fakta",count:"18",focus:["pw","kt","tb"],format:"studio"},
+  {name:"Year 8, weak BM",level:"tahun-8",lang:"bm",jenis:"karangan fakta",count:"15",focus:["kt","tb"],format:"studio"},
+  {name:"IGCSE Malay",level:"igcse",lang:"bm",jenis:"rencana",count:"20",focus:["pw","kt","pb"],format:"studio"},
+  {name:"IGCSE English",level:"igcse-0472",lang:"en",jenis:"article",count:"15",focus:["kt","tb"],format:"studio"}
+];
+
+/* ---------- state ---------- */
+let CAT=null, LV={};
+const S={preset:store.get("rak:preset",null),lang:store.get("rak:lang","all"),q:"",showAll:false,
+  o:Object.assign({topic:"",level:"kssm-2",lang:"bm",jenis:"karangan fakta",count:"18",focus:["pw","kt","tb"],format:"studio",based:null},store.get("rak:order",{})),
+  mine:store.get("rak:mine",[]),used:store.get("rak:used",{})};
+S.o.based=null;
+const allPresets=()=>[...BUILTIN,...S.mine.map(p=>({...p,mine:true}))];
+const hue=l=>!l?"c-y":l==="asas"?"c-y":l.startsWith("kssr")?"c-g":l.startsWith("igcse")?"c-p":"c-b";
+const lvLabel=l=>(LV[l]&&LV[l].label)||l||"";
+const jenisNice=j=>String(j||"").replace(/-/g," ");
+
+/* ---------- looks ---------- */
+function setLook(l){document.documentElement.dataset.look=l;store.set("rak:look",l);$$(".looks button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.look===l))}
+$$(".looks button").forEach(b=>b.onclick=()=>setLook(b.dataset.look));
+setLook(store.get("rak:look","stabilo"));
+
+/* ---------- load the catalogue (live: read from the repo every time) ---------- */
+async function load(announce){
+  try{
+    const r=await fetch("../catalog.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok)throw new Error(r.status);
+    CAT=await r.json();
+  }catch(e){
+    $("#stamp").innerHTML=`<span class="stale">Could not load the shelf</span> Check your connection, then <button class="linkbtn" onclick="location.reload()">try again</button>.`;
+    return;
+  }
+  LV=Object.fromEntries(CAT.levels.map(l=>[l.id,l]));
+  $("#o-level").innerHTML=CAT.levels.map(l=>`<option value="${esc(l.id)}">${esc(l.label)}</option>`).join("");
+  renderAll();
+  if(announce)toast(`Shelf checked: ${CAT.items.length} Kloz`);
+}
+function renderStamp(){
+  const n=CAT.items.length, g=CAT.items.filter(i=>i.home==="github").length;
+  const age=Math.floor((Date.now()-new Date(CAT.updated+"T00:00:00").getTime())/864e5);
+  const stale=age>(CAT.stale_after_days||14);
+  $("#stamp").innerHTML=`<span><b>${n}</b> Kloz</span><span><span class="meter"><i style="width:${Math.round(g/n*100)}%"></i></span><b>${g}</b> on GitHub, ${n-g} not yet</span>
+    <span>${stale?`<span class="stale">Stale</span> `:""}Last added <b>${nice(CAT.updated)}</b>${stale?`, ${age} days ago. Newer Kloz may be missing.`:""}</span>
+    <button class="linkbtn" id="refresh">Check for new Kloz</button>`;
+  $("#refresh").onclick=()=>load(true);
+  $("#foot").textContent=`This page reads catalog.json in the kloz repo each time it opens. "Used" marks and your own presets stay in this browser only. Review date for this page: ${nice(CAT.review)} ${String(CAT.review).slice(0,4)}.`;
+}
+
+/* ---------- presets: one tap filters the shelf and fills the order ---------- */
+function renderPresets(){
+  const count=p=>CAT.items.filter(i=>i.level===p.level&&i.lang===p.lang).length;
+  $("#presets").innerHTML=`<button class="chip" data-i="-1" aria-pressed="${S.preset==null}">Everything <span class="n">${CAT.items.length}</span></button>`+
+    allPresets().map((p,i)=>`<button class="chip ${hue(p.level)} ${p.mine?"mine":""}" data-i="${i}" aria-pressed="${S.preset===p.name}">${esc(p.name)} <span class="n">${count(p)}</span>${p.mine?`<span class="x" role="button" tabindex="0" data-del="${esc(p.name)}" aria-label="Delete preset">✕</span>`:""}</button>`).join("");
+  $$("#presets .chip").forEach(b=>b.onclick=ev=>{
+    if(ev.target.dataset.del){S.mine=S.mine.filter(p=>p.name!==ev.target.dataset.del);store.set("rak:mine",S.mine);if(S.preset===ev.target.dataset.del)S.preset=null;renderAll();return}
+    const i=+b.dataset.i;
+    if(i<0){S.preset=null}
+    else{const p=allPresets()[i];S.preset=p.name;S.lang="all";
+      Object.assign(S.o,{level:p.level,lang:p.lang,jenis:p.jenis,count:p.count,focus:[...p.focus],format:p.format});flashOrder()}
+    S.showAll=false;store.set("rak:preset",S.preset);renderAll();
+  });
+}
+const curPreset=()=>allPresets().find(p=>p.name===S.preset)||null;
+
+/* ---------- shelf ---------- */
+function matches(i){
+  if(S.lang!=="all"&&i.lang!==S.lang)return false;
+  if(S.q){const q=S.q.toLowerCase();if(!(`${i.title} ${i.jenis} ${lvLabel(i.level)} ${i.note||""}`.toLowerCase().includes(q)))return false}
+  return true;
+}
+function card(i){
+  const L=i.links||{}, on=i.home==="github";
+  const used=(S.used[i.id]||[]).slice(-1)[0], log=(i.log||[]).slice(-1)[0];
+  const primary=L.student?`<a class="btn go" href="${esc(L.student)}" target="_blank" rel="noopener">Open student sheet</a><button class="btn" data-copy="${esc(L.student)}">Copy link</button>`
+    :L.doc?`<a class="btn go" href="${esc(L.doc)}" target="_blank" rel="noopener">Open Google Doc</a>`
+    :L.artifact?`<a class="btn go" href="${esc(L.artifact)}" target="_blank" rel="noopener">Open in Claude</a>`:"";
+  const where=on?"":`<span class="tag off">Not on GitHub</span>`;
+  const meta=[i.words?`${i.words} words`:"",i.gaps?`${i.gaps} blanks`:"",i.made?`made ${nice(i.made)}`:""].filter(Boolean).join(", ");
+  return `<article class="card ${hue(i.level)}" data-id="${esc(i.id)}">
+    <div class="tags"><span class="tag lv">${esc(lvLabel(i.level))}</span><span class="tag">${i.lang==="en"?"English":"BM"}</span><span class="tag">${esc(jenisNice(i.jenis))}</span>
+      ${i.status==="disahkan"?`<span class="tag ok">Checked</span>`:`<span class="tag dr">Draft</span>`}${where}</div>
+    <h3>${esc(i.title)}</h3>
+    <p class="meta">${esc(meta)}</p>
+    ${i.note?`<p class="note">${esc(i.note)}</p>`:""}
+    ${log?`<p class="used">${esc(nice(log.d))}: ${esc(log.text)}</p>`:""}
+    ${used?`<p class="used">You used it ${esc(nice(used.d))}${used.v?`: ${esc(used.v)}`:""}</p>`:""}
+    <div class="acts">${primary}</div>
+    <button class="btn sm" data-more aria-expanded="false">More options</button>
+    <div class="more"><div>
+      <div class="two">
+        ${L.key?`<a class="btn sm" href="${esc(L.key)}" target="_blank" rel="noopener">With answers</a>`:""}
+        ${L.studio?`<a class="btn sm" href="${esc(L.studio)}" target="_blank" rel="noopener">Change blanks, print</a>`:""}
+        ${L.artifact&&L.student?`<a class="btn sm" href="${esc(L.artifact)}" target="_blank" rel="noopener">Claude original</a>`:""}
+        ${L.doc&&L.student?`<a class="btn sm" href="${esc(L.doc)}" target="_blank" rel="noopener">Google Doc</a>`:""}
+        <button class="btn sm" data-relevel>Same topic, other level</button>
+        <button class="btn sm" data-retopic>Same settings, new topic</button>
+      </div>
+      ${!on&&!/Pelangi/.test(i.source||"")?`<button class="btn sm" data-save>Save to GitHub</button>`:""}
+      <button class="btn sm" data-log>I used it: tell Claude how it went</button>
+      <div class="logbox">
+        <div class="chips">${["Too easy","Right level","Too hard"].map(v=>`<button class="chip" data-v="${v}" aria-pressed="false">${v}</button>`).join("")}</div>
+        <textarea placeholder="One line: what worked, what to fix" aria-label="Feedback"></textarea>
+        <button class="btn sm" data-sendlog>Send to Claude</button>
+      </div>
+    </div></div>
+  </article>`;
+}
+function renderShelf(){
+  const p=curPreset(), items=CAT.items.filter(matches);
+  const byDate=(a,b)=>String(b.made||"").localeCompare(String(a.made||""));
+  let html="";
+  if(!p){
+    html=items.length?`<p class="band">Everything <span>newest first</span></p><div class="grid">${items.sort(byDate).map(card).join("")}</div>`:"";
+  }else{
+    const rank=LV[p.level]?LV[p.level].rank:0;
+    const lang=i=>S.lang!=="all"||i.lang===p.lang;
+    const exact=items.filter(i=>i.level===p.level&&lang(i)).sort(byDate);
+    const near=items.filter(i=>i.level!==p.level&&lang(i)&&LV[i.level]&&Math.abs(LV[i.level].rank-rank)<=1.5)
+      .sort((a,b)=>Math.abs(LV[a.level].rank-rank)-Math.abs(LV[b.level].rank-rank)||byDate(a,b));
+    const rest=items.filter(i=>!exact.includes(i)&&!near.includes(i)).sort(byDate);
+    if(exact.length)html+=`<p class="band">Ready for ${esc(p.name)} <span>${exact.length} at this level</span></p><div class="grid">${exact.map(card).join("")}</div>`;
+    else html+=`<div class="empty" style="margin-top:22px"><p><b>Nothing at this level yet.</b> ${near.length?"The closest ones are below, or order one made for this class.":"Order one made for this class."}</p><button class="btn go" data-toorder>Order one for ${esc(p.name)}</button></div>`;
+    if(near.length)html+=`<p class="band">One step away <span>a level up or down: check before using</span></p><div class="grid">${near.map(card).join("")}</div>`;
+    if(rest.length)html+=S.showAll?`<p class="band">Other levels</p><div class="grid">${rest.map(card).join("")}</div>`
+      :`<p style="margin-top:18px"><button class="btn sm" data-showall>Show the other ${rest.length} at other levels</button></p>`;
+  }
+  if(!items.length)html=`<div class="empty" style="margin-top:22px"><p><b>No Kloz matches that.</b> Clear the search, or order it.</p><button class="btn go" data-toorder>Order it</button></div>`;
+  $("#shelf").innerHTML=html;
+  bindShelf();
+}
+function bindShelf(){
+  const item=el=>CAT.items.find(i=>i.id===el.closest(".card").dataset.id);
+  $$("#shelf [data-copy]").forEach(b=>b.onclick=()=>copy(b.dataset.copy,"Student link copied. Paste it to the student."));
+  $$("#shelf [data-more]").forEach(b=>b.onclick=()=>{const c=b.closest(".card"),o=c.classList.toggle("open");b.setAttribute("aria-expanded",o);b.textContent=o?"Fewer options":"More options"});
+  $$("#shelf [data-showall]").forEach(b=>b.onclick=()=>{S.showAll=true;renderShelf()});
+  $$("#shelf [data-toorder]").forEach(b=>b.onclick=()=>{if(S.q&&!S.o.topic){S.o.topic=S.q;renderOrder()}goOrder()});
+  $$("#shelf [data-relevel]").forEach(b=>b.onclick=()=>{const i=item(b);Object.assign(S.o,{topic:i.title,lang:i.lang,jenis:matchJenis(i),based:{id:i.id,title:i.title,level:i.level,mode:"level"}});renderOrder();goOrder();toast("Topic filled in. Now pick the level.");$("#o-level").focus()});
+  $$("#shelf [data-retopic]").forEach(b=>b.onclick=()=>{const i=item(b);Object.assign(S.o,{topic:"",level:i.level,lang:i.lang,jenis:matchJenis(i),based:{id:i.id,title:i.title,level:i.level,mode:"topic"}});if(i.gaps)S.o.count=nearest(i.gaps);renderOrder();goOrder();$("#o-topic").focus()});
+  $$("#shelf [data-save]").forEach(b=>b.onclick=()=>{const i=item(b),L=i.links||{};
+    openClaude(`Save this Kloz to my kloz GitHub repo (biotechadamnazir/kloz) so it gets a student link.\n\nKloz: ${i.title} (${lvLabel(i.level)}, ${i.lang==="en"?"English":"BM"})\nIt lives here now: ${L.artifact||L.doc||"(ask me)"}\nCatalogue id to replace: ${i.id}\n\nConvert it to the Kloz bank format if needed, run add.py, push, and tell me when it shows on the Rak: https://biotechadamnazir.github.io/kloz/rak/`)});
+  $$("#shelf [data-log]").forEach(b=>b.onclick=()=>b.nextElementSibling.classList.toggle("on"));
+  $$("#shelf .logbox .chip").forEach(b=>b.onclick=()=>{b.parentElement.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b&&b.getAttribute("aria-pressed")!=="true"))});
+  $$("#shelf [data-sendlog]").forEach(b=>b.onclick=()=>{const i=item(b),box=b.closest(".logbox");
+    const v=(box.querySelector('.chip[aria-pressed="true"]')||{}).dataset?.v||"", t=box.querySelector("textarea").value.trim();
+    (S.used[i.id]=S.used[i.id]||[]).push({d:today(),v});store.set("rak:used",S.used);
+    openClaude(`Kloz feedback for ${i.title} (id: ${i.id}, ${lvLabel(i.level)}).\nUsed on ${today()}.${v?`\nLevel verdict: ${v}.`:""}${t?`\nNotes: ${t}`:""}\n\nRecord this in the "log" of this item in catalog.json in my kloz repo, fix the essay if the notes call for it, add anything reusable to Lessons Learned, then push.`);
+    renderShelf()});
+}
+const matchJenis=i=>{const j=jenisNice(i.jenis);const list=JENIS[i.lang]||JENIS.bm;return list.find(x=>x===j||x.includes(j)||j.includes(x.replace("karangan ","")))||list[0]};
+const nearest=n=>[8,10,12,15,18,20,25].reduce((a,b)=>Math.abs(b-n)<Math.abs(a-n)?b:a)+"";
+
+/* ---------- order ---------- */
+function renderOrder(){
+  const o=S.o;
+  $("#o-topic").value=o.topic;$("#o-level").value=o.level;$("#o-lang").value=o.lang;
+  const list=JENIS[o.lang]||JENIS.bm; if(!list.includes(o.jenis))o.jenis=list[0];
+  $("#o-jenis").innerHTML=list.map(j=>`<option>${esc(j)}</option>`).join("");$("#o-jenis").value=o.jenis;
+  $("#o-count").value=o.count;
+  $$("select.blank").forEach(fit);
+  $("#focus").innerHTML=FOCUS.filter(f=>!(o.lang==="en"&&f[0]==="pb")).map(f=>`<button class="chip c-b" data-f="${f[0]}" aria-pressed="${o.focus.includes(f[0])}">${o.lang==="en"?f[2]:f[1]}</button>`).join("");
+  $$("#focus .chip").forEach(b=>b.onclick=()=>{const f=b.dataset.f;o.focus=o.focus.includes(f)?o.focus.filter(x=>x!==f):[...o.focus,f];renderOrder()});
+  $("#format").innerHTML=FORMAT.map(f=>`<button class="chip c-p" data-f="${f[0]}" aria-pressed="${o.format===f[0]}">${f[1]}</button>`).join("");
+  $$("#format .chip").forEach(b=>b.onclick=()=>{o.format=b.dataset.f;renderOrder()});
+  const b=o.based;$("#based").classList.toggle("on",!!b);
+  if(b)$("#basedtxt").textContent=b.mode==="level"?`Same topic as "${b.title}", for another level`:`Same settings as "${b.title}", new topic`;
+  $("#preview").textContent=message();
+  store.set("rak:order",{...o,based:null});
+}
+function fit(sel){/* size a select to its chosen text so the sentence reads naturally */
+  const t=sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text:"";sel.style.width=Math.max(2.2,t.length*.56+1.2)+"em";
+}
+function flashOrder(){requestAnimationFrame(()=>$$(".blank").forEach(b=>{b.classList.remove("flash");void b.offsetWidth;b.classList.add("flash")}))}
+function message(){
+  const o=S.o, lang=o.lang==="en"?"English":"BM", fmt=FORMAT.find(f=>f[0]===o.format);
+  const focus=FOCUS.filter(f=>o.focus.includes(f[0])).map(f=>o.lang==="en"?f[2]:f[1]);
+  const done=CAT?CAT.items.filter(i=>i.lang===o.lang).map(i=>i.title):[];
+  const topic=o.topic.trim();
+  const L=[`Kloz: ${topic||"(you pick the topic)"}, ${lvLabel(o.level)}, ${lang}`,"",
+    `Type of writing: ${o.jenis}`,
+    `Blanks: about ${o.count}${focus.length?`, mostly ${focus.join(", ")}`:""}`,
+    `Format: ${fmt[2]}`];
+  if(!topic)L.push(`Topic: choose one that suits this level and that I have not done yet. Already done: ${done.join("; ")||"none"}.`);
+  if(o.based)L.push(o.based.mode==="level"?`Based on: the same topic as my existing Kloz "${o.based.title}" (id ${o.based.id}, ${lvLabel(o.based.level)}), rewritten for this level. Do not reuse its sentences.`
+    :`Based on: the same settings as my existing Kloz "${o.based.title}" (id ${o.based.id}).`);
+  L.push("","Use the kloz-karangan skill. Check the stock in my kloz GitHub repo first and tell me if something there already fits.",
+    "When it is ready, save it to GitHub with add.py and push, so it appears on my Rak (https://biotechadamnazir.github.io/kloz/rak/), and give me the student link.");
+  return L.join("\n");
+}
+async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg||"Copied")}catch(e){prompt("Copy this:",t)}}
+function openClaude(text,web){
+  const q=encodeURIComponent(text);
+  navigator.clipboard&&navigator.clipboard.writeText(text).catch(()=>{});
+  toast("Opening Claude. The message is also copied, in case it does not open.");
+  const url=(web?"https://claude.ai/new?q=":"claude://claude.ai/new?q=")+q;
+  if(web)window.open(url,"_blank","noopener");else location.href=url;
+}
+function goOrder(){$("#order").scrollIntoView({behavior:"smooth",block:"start"});flashOrder()}
+$("#o-topic").oninput=e=>{S.o.topic=e.target.value;$("#preview").textContent=message();store.set("rak:order",{...S.o,based:null})};
+[["#o-level","level"],["#o-lang","lang"],["#o-jenis","jenis"],["#o-count","count"]].forEach(([s,k])=>$(s).onchange=e=>{S.o[k]=e.target.value;renderOrder()});
+$("#basedx").onclick=()=>{S.o.based=null;renderOrder()};
+/* phones: the https link hands over to the Claude app when it is installed; computers: the desktop app link */
+$("#send").onclick=()=>openClaude(message(),MOBILE);
+$("#send2").onclick=()=>openClaude(message(),!MOBILE);
+$("#send2").textContent=MOBILE?"Try the app link":"Open in browser";
+$("#copy").onclick=()=>copy(message(),"Request copied. Paste it into Claude.");
+$("#savepreset").onclick=()=>{const name=(prompt("Name this preset (for example the class or day). It stays in this browser only.")||"").trim();if(!name)return;
+  const o=S.o;S.mine=S.mine.filter(p=>p.name!==name).concat([{name,level:o.level,lang:o.lang,jenis:o.jenis,count:o.count,focus:[...o.focus],format:o.format}]);
+  store.set("rak:mine",S.mine);S.preset=name;store.set("rak:preset",name);renderAll();toast(`Preset "${name}" saved`)};
+$("#fab").onclick=goOrder;
+$("#refresh2").onclick=()=>load(true);
+$$("#langseg button").forEach(b=>b.onclick=()=>{S.lang=b.dataset.l;store.set("rak:lang",S.lang);renderAll()});
+$("#q").oninput=e=>{S.q=e.target.value.trim();renderShelf()};
+
+function renderAll(){
+  if(S.preset&&!curPreset())S.preset=null;
+  $$("#langseg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===S.lang));
+  renderStamp();renderPresets();renderShelf();renderOrder();
+}
+load();
+</script>
+</body>
+</html>

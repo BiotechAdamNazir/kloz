@@ -283,7 +283,10 @@ function labelFor(c){
 
 /* ---------- choose gaps: forced first, then spread evenly through the text ---------- */
 function choose(){
-  const r=rng(S.seed*7919+S.ei*31);
+  /* gap choice is tied to the essay id, not its position in the list, so adding essays never reshuffles sheets already sent */
+  const LEG={"bm-cerita-pelancongan":0,"bm-fakta-sungai":1,"bm-perihal-taman-eko-rimba":2};
+  const ek=E.id in LEG?LEG[E.id]:[...String(E.id)].reduce((a,c)=>(a*33+c.charCodeAt(0))%9973,7);
+  const r=rng(S.seed*7919+ek*31);
   const taken=[];const usedWords=new Set();
   const covers=c=>{for(let x=c.a;x<=c.b;x++)if(taken.some(t=>x>=t.a&&x<=t.b))return true;return false};
   const near=c=>taken.some(t=>Math.abs(model.pos[c.a]-model.pos[t.b])<3||Math.abs(model.pos[t.a]-model.pos[c.b])<3);
@@ -561,6 +564,8 @@ function bind(){
     btn.disabled=false;btn.textContent=t};
   $("#bDocxS").onclick=e=>dx("student",e.currentTarget);$("#bDocxK").onclick=e=>dx("key",e.currentTarget);
 }
+/* #e=<essay id> opens the Studio on that essay (used by the Rak teacher page) */
+{const hm=(location.hash||"").match(/[#&]e=([a-z0-9-]{1,80})/);if(hm){const hi=DATA.essays.findIndex(e=>e.id===hm[1]);if(hi>=0)S.ei=hi}}
 buildModel();S.decoys=(E.umpan||[]).join(", ");$("#decoys").value=S.decoys;
 renderEssays();renderChips();bind();update();
 window.__kloz={student,linkFor,printHTML,makeDocx,studentFile,S,update};
