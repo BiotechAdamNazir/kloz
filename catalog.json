@@ -1,6 +1,6 @@
 {
  "about": "Every Kloz Adam has, in one list. The teacher page (rak/) reads this file each time it opens. Entries with kind 'studio' are refreshed from essays/ by add.py; the rest (Google Docs, English sets, items not yet in this repo) are written by hand. No student names: this repo is public.",
- "updated": "2026-11-11",
+ "updated": "2026-11-14",
  "review": "2026-12-11",
  "stale_after_days": 14,
  "levels": [
@@ -449,6 +449,28 @@
    "links": {
     "artifact": "https://claude.ai/artifact/32fixiAtFMGRAPmzmKMJW4"
    }
+  },
+  {
+   "id": "bm-igcse-emel-hidup-sihat",
+   "kind": "studio",
+   "made": "2026-11-14",
+   "log": [],
+   "home": "github",
+   "title": "E-mel Tidak Rasmi: Tip Hidup Sihat",
+   "lang": "bm",
+   "level": "igcse",
+   "jenis": "e-mel",
+   "status": "draf",
+   "source": "Claude draft 14 Nov 2026 (IGCSE Malay 0546, Paper 4 Q3 style; model is longer than 130–140 words for practice)",
+   "words": 205,
+   "gaps": 21,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-igcse-emel-hidup-sihat",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-emel-hidup-sihat",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-emel-hidup-sihat-skema",
+    "artifact": "https://claude.ai/artifact/7zSmAYCyoy1r2P4ATDQRhL"
+   },
+   "note": "IGCSE 0546 Q3 e-mel tidak rasmi; gaps target e-mel structure first, then usual words. Model is ~205 words (exam asks 130–140)."
   }
  ]
 }

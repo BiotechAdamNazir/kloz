@@ -404,6 +404,86 @@
    "wb": true,
    "lab": false,
    "note": "Default sheet: lesson gaps (penanda wacana, ungkapan, kosa kata, tatabahasa). With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-igcse-emel-hidup-sihat",
+   "essay": "bm-igcse-emel-hidup-sihat",
+   "pref": [],
+   "lens": [
+    "pw",
+    "kt",
+    "tb",
+    "pb"
+   ],
+   "count": 21,
+   "seed": 1,
+   "fin": [
+    "L0",
+    "L1",
+    "L2",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L11",
+    "L13",
+    "L15",
+    "L16",
+    "L17",
+    "L18",
+    "L19",
+    "L20",
+    "L23",
+    "L24",
+    "L25",
+    "L26"
+   ],
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "IGCSE 0546 e-mel: struktur gaps forced first (subjek, salam, pembuka, tujuan, penanda wacana, penutup, tandatangan), then usual vocabulary."
+  },
+  {
+   "id": "bm-igcse-emel-hidup-sihat-skema",
+   "essay": "bm-igcse-emel-hidup-sihat",
+   "pref": [],
+   "lens": [
+    "pw",
+    "kt",
+    "tb",
+    "pb"
+   ],
+   "count": 21,
+   "seed": 1,
+   "fin": [
+    "L0",
+    "L1",
+    "L2",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L11",
+    "L13",
+    "L15",
+    "L16",
+    "L17",
+    "L18",
+    "L19",
+    "L20",
+    "L23",
+    "L24",
+    "L25",
+    "L26"
+   ],
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Same sheet, with Tunjuk jawapan."
   }
  ]
 }
