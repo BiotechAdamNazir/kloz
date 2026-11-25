@@ -518,6 +518,40 @@
    "wb": true,
    "lab": false,
    "note": "Default sheet: lesson gaps. With Tunjuk jawapan."
+  },
+  {
+   "id": "bm-cerita-kebersihan-diri-t4",
+   "essay": "bm-cerita-kebersihan-diri-t4",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "check",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps."
+  },
+  {
+   "id": "bm-cerita-kebersihan-diri-t4-skema",
+   "essay": "bm-cerita-kebersihan-diri-t4",
+   "pref": [],
+   "lens": [
+    "pw",
+    "pb",
+    "kt",
+    "tb"
+   ],
+   "count": 20,
+   "seed": 1,
+   "mode": "key",
+   "wb": true,
+   "lab": false,
+   "note": "Default sheet: lesson gaps. With Tunjuk jawapan."
   }
  ]
 }

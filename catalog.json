@@ -498,6 +498,28 @@
     "artifact": "https://claude.ai/artifact/PTaxJY4jV1TVDzEjTCZojE"
    },
    "note": "Cerita Tahun 4; Cabaran = 3 soalan pemahaman"
+  },
+  {
+   "id": "bm-cerita-kebersihan-diri-t4",
+   "kind": "studio",
+   "made": "2026-11-25",
+   "log": [],
+   "home": "github",
+   "title": "Aina Belajar Menjaga Kebersihan",
+   "lang": "bm",
+   "level": "kssr-4",
+   "jenis": "cerita",
+   "status": "draf",
+   "source": "Claude draft 2026-11-25",
+   "words": 150,
+   "gaps": 17,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-cerita-kebersihan-diri-t4",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-cerita-kebersihan-diri-t4",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-cerita-kebersihan-diri-t4-skema",
+    "artifact": "https://claude.ai/artifact/91apaZKGh7vtvpVp7rH9TS"
+   },
+   "note": "Sekuel Kloz Amir Menjaga Kesihatan; Cabaran = 3 soalan pemahaman"
   }
  ]
 }
