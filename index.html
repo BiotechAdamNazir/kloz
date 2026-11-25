@@ -65,6 +65,7 @@ h1{font:400 clamp(24px,5vw,34px)/1.12 var(--display);margin:4px 0 6px;text-wrap:
 .gap input{-webkit-appearance:none;appearance:none;border:0;border-bottom:2px solid var(--c,var(--accent));background:color-mix(in srgb,var(--c,var(--accent)) 6%,transparent);
   border-radius:4px 4px 0 0;font:16px var(--serif);text-align:center;padding:0 5px;height:1.6em;width:6.5em;max-width:62vw;transition:background .2s,border-color .2s,color .2s}
 .gap input:focus{background:var(--accent-soft);outline:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:4px 0 14px;font:600 .8rem/1.3 var(--ui)}.legend .lh{flex-basis:100%;color:var(--muted);font-weight:600}.legend .chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;border:1.5px solid var(--c);color:var(--ink,inherit)}.legend .chip i{width:12px;height:12px;border-radius:50%;background:var(--c)}
 .gap .num{position:absolute;left:1px;top:-1.05em;font:700 .62rem/1 var(--ui);color:var(--muted)}
 .gap .lab{position:absolute;left:-1em;right:-1em;top:100%;margin-top:1px;text-align:center;font:700 .56rem/1 var(--ui);letter-spacing:.03em;color:var(--c,var(--accent));white-space:nowrap}
 .gap.ok input{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
@@ -194,7 +195,7 @@ if(!D||!Array.isArray(D.P)){
 document.documentElement.lang=D.lang==="en"?"en":"ms";
 document.title=(D.t||"Kloz Karangan")+" · Kloz";
 
-/* D: {t,q,lv,lang,mode:'check'|'key'|'none',wb,lab,P:[[str|gapIndex]],A:[[answer,alt..]],C:[classIdx],CL:[[label,colourSlot]],N:[note],X:[decoys],ch,dr} */
+/* D: {t,q,lv,lang,mode:'check'|'key'|'none',wb,lab,leg,P:[[str|gapIndex]],A:[[answer,alt..]],C:[classIdx],CL:[[label,colourSlot]],N:[note],X:[decoys],ch,dr} */
 /* CL colour slot goes into a class attribute unescaped, so force it to an integer 1-7 (link data is untrusted). */
 const A=D.A||[], n=A.length, CL=(Array.isArray(D.CL)?D.CL:[]).map(c=>[String((c&&c[0])??""),Math.min(7,Math.max(1,parseInt(c&&c[1],10)||5))]), C=D.C||[], N=D.N||[];
 const saved=store.get(key)||{};
@@ -211,6 +212,10 @@ function grade(i){const v=norm(st.vals[i]);if(!v)return"empty";const ok=(A[i]||[
 const boxWords=[];
 if(D.wb){const all=Array.isArray(D.B)?D.B:A.map(a=>a[0]).concat(D.X||[]);all.slice().sort((a,b)=>a.localeCompare(b,"ms")).forEach(w=>boxWords.push(w))}
 
+/* colour key (opt-in with D.leg): one chip per word type used in this sheet, in the gaps' own colours */
+function legendHTML(){const seen=[...new Set(C)].filter(k=>CL[k]&&CL[k][0]);if(!seen.length)return"";
+  const h=D.lang==="en"?"Colour key: each gap colour shows the type of word that goes there.":"Petunjuk warna: warna setiap ruang menunjukkan golongan kata yang perlu diisi.";
+  return `<div class="legend" role="note"><span class="lh">${h}</span>${seen.map(k=>`<span class="chip c${CL[k][1]}"><i></i>${esc(CL[k][0])}</span>`).join("")}</div>`}
 const app=document.getElementById("app");
 const today=new Date().toLocaleDateString(D.lang==="en"?"en-GB":"ms-MY",{day:"numeric",month:"long",year:"numeric"});
 let gi=0;
@@ -227,6 +232,7 @@ app.innerHTML=`
     <div class="idline"><label>${ui.name}: <input id="nm" autocomplete="name" value="${esc(st.name)}"></label><span>${ui.date}: ${today}</span></div>
     ${D.wb?`<div class="box"><div class="h"><span>${ui.box}</span><span>${ui.unused((D.X||[]).length)}</span></div><div class="words">${boxWords.map((w,k)=>`<button type="button" class="w" data-w="${esc(w)}" data-k="${k}">${esc(w)}</button>`).join("")}</div></div>`:""}
     <p class="howto">${D.wb?ui.how:ui.how.split(",")[0]+"."}</p>
+    ${D.leg?legendHTML():""}
     <div class="essay">${paraHTML}</div>
     <div class="challenge"><h2>${ui.challenge}</h2><p>${esc(D.ch||ui.chdef)}</p><textarea id="chx" aria-label="${ui.challenge}">${esc(st.ch)}</textarea></div>
   </article>

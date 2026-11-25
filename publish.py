@@ -57,6 +57,8 @@ async def main():
                 return window.__kloz.student(w.mode||"check");
             }""", [ei, w])
             assert d["A"], f"{w['id']}: no gaps"
+            if w.get("leg"):
+                d["leg"] = True  # colour key for word types (on by default for Kloz added from 25 Nov 2026)
             # rev changes only when the gaps or answers change, so a text fix keeps students' saved work
             d["rev"] = hashlib.sha1(json.dumps([d["A"], d["B"]], ensure_ascii=False).encode()).hexdigest()[:10]
             body = json.dumps(d, ensure_ascii=False, sort_keys=True)

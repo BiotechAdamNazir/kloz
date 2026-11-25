@@ -144,7 +144,7 @@ def main():
                 for suf, mode in (("", "check"), ("-skema", "key")):
                     ws["worksheets"].append({
                         "id": e["id"] + suf, "essay": e["id"], "pref": [], "lens": ["pw", "pb", "kt", "tb"],
-                        "count": n, "seed": 1, "mode": mode, "wb": True, "lab": False,
+                        "count": n, "seed": 1, "mode": mode, "wb": True, "lab": False, "leg": True,
                         "note": "Default sheet: lesson gaps." + (" With Tunjuk jawapan." if suf else ""),
                     })
             added.append((e["id"], state))
