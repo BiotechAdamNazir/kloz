@@ -476,15 +476,20 @@
    "id": "bm-cerita-menjaga-kesihatan-t4",
    "kind": "studio",
    "made": "2026-11-25",
-   "log": [],
+   "log": [
+    {
+     "d": "2026-11-25",
+     "text": "Adam: first line should be 'ialah seorang murid tahun empat' (lowercase tahun). Fixed and approved (disahkan)."
+    }
+   ],
    "home": "github",
    "title": "Amir Menjaga Kesihatan",
    "lang": "bm",
    "level": "kssr-4",
    "jenis": "cerita",
-   "status": "draf",
+   "status": "disahkan",
    "source": "Claude draft 2026-11-25",
-   "words": 165,
+   "words": 166,
    "gaps": 17,
    "links": {
     "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-cerita-menjaga-kesihatan-t4",
