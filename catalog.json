@@ -503,13 +503,18 @@
    "id": "bm-cerita-kebersihan-diri-t4",
    "kind": "studio",
    "made": "2026-11-25",
-   "log": [],
+   "log": [
+    {
+     "d": "2026-11-25",
+     "text": "Adam: read and approved (disahkan)."
+    }
+   ],
    "home": "github",
    "title": "Aina Belajar Menjaga Kebersihan",
    "lang": "bm",
    "level": "kssr-4",
    "jenis": "cerita",
-   "status": "draf",
+   "status": "disahkan",
    "source": "Claude draft 2026-11-25",
    "words": 150,
    "gaps": 17,
