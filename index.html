@@ -146,6 +146,7 @@ h1{font:400 clamp(24px,5vw,34px)/1.12 var(--display);margin:4px 0 6px;text-wrap:
   <div class="btns">
     <button class="btn" id="bRetry" type="button" hidden>Cuba lagi yang salah</button>
     <button class="btn" id="bShow" type="button" hidden>Tunjuk jawapan</button>
+    <button class="btn" id="bSend" type="button">Hantar kepada guru</button>
     <button class="btn primary" id="bCheck" type="button">Semak jawapan</button>
   </div>
 </div></div>
@@ -237,6 +238,7 @@ app.innerHTML=`
     <div class="challenge"><h2>${ui.challenge}</h2><p>${esc(D.ch||ui.chdef)}</p><textarea id="chx" aria-label="${ui.challenge}">${esc(st.ch)}</textarea></div>
   </article>
   <section class="result" id="result" hidden aria-live="polite"></section>
+  <section class="result" id="send" hidden aria-live="polite"></section>
   <p class="foot">${ui.saved}</p>
   ${D.wb&&D.fb?`<button type="button" class="fab off" id="fab" aria-expanded="false" aria-controls="pop"><span id="fablab">${ui.boxbtn}</span><span class="ct" id="fabct"></span></button>
   <div class="pop" id="pop" role="dialog" aria-label="${ui.box}" hidden><div class="h"><span>${ui.box}</span><button type="button" class="x" id="popx" aria-label="${ui.close}">✕</button></div>
@@ -307,6 +309,31 @@ function copyResult(){
   try{navigator.clipboard.writeText(txt).then(done,()=>fallback(txt))}catch(e){fallback(txt)}
   function fallback(t){const ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");done()}catch(e){toast(t)}ta.remove()}
 }
+function hantarText(){
+  const en=D.lang==="en";const at=new Date();const lines=["#HANTAR v1","AKTIVITI: Kloz – "+(D.t||""),(en?"NAME: ":"NAMA: ")+(st.name||"—"),"MASA: "+at.toLocaleString("ms-MY")];
+  let ok=0;for(let i=0;i<n;i++)if(grade(i)==="ok")ok++;
+  const filled=st.vals.filter(v=>norm(v)).length;
+  lines.push("STATUS: "+(canCheck&&st.checked?`Disemak ${ok}/${n} (${Math.round(ok/n*100)}%)`:`Diisi ${filled}/${n}`));
+  for(let i=0;i<n;i++){const v=(st.vals[i]||"").trim();const g=grade(i);lines.push(`${i+1}: ${v||"—"}`+(canCheck&&st.checked?(g==="ok"?" ✓":g==="near"?" ~":" ✗"):""))}
+  if((st.ch||"").trim())lines.push("CABARAN: "+st.ch.trim().replace(/\s+/g," "));
+  lines.push("#TAMAT");return lines.join("\n");
+}
+function openSend(){
+  if(!st.vals.some(v=>norm(v))){toast(ui.fillsome);return}
+  const t=hantarText(),el=document.getElementById("send");
+  el.innerHTML=`<div class="eyebrow">Hantar kepada guru</div>
+    <p class="who">Pilih satu cara. Jawapan anda disusun dalam format #HANTAR supaya guru mudah membacanya.</p>
+    <div class="btns"><button class="btn primary" id="sCopy" type="button">Salin #HANTAR</button>
+    <a class="btn" id="sWa" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(t)}">Buka WhatsApp</a>
+    <a class="btn" id="sMail" href="mailto:?subject=${encodeURIComponent("#HANTAR Kloz – "+(D.t||""))}&body=${encodeURIComponent(t)}">Hantar e-mel</a></div>
+    <textarea readonly style="width:100%;min-height:9em;border:1px solid var(--line);border-radius:10px;background:transparent;padding:8px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;color:var(--ink)">${esc(t)}</textarea>`;
+  el.hidden=false;
+  document.getElementById("sCopy").addEventListener("click",()=>{const done=()=>toast("Disalin. Tampal dalam WhatsApp atau e-mel kepada guru.");
+    try{navigator.clipboard.writeText(t).then(done,()=>fb())}catch(e){fb()}
+    function fb(){const ta=el.querySelector("textarea");ta.select();try{document.execCommand("copy");done()}catch(e){toast("Pilih teks di bawah dan salin.")}}});
+  el.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+$("#bSend").addEventListener("click",openSend);
 $("#bCheck").addEventListener("click",check);
 $("#bRetry").addEventListener("click",()=>{for(let i=0;i<n;i++)if(grade(i)!=="ok"){st.vals[i]="";const inp=document.getElementById("in"+i);inp.value="";fit(inp);clearMark(i)}
   save();refresh();const f=inputs.find(x=>!x.value);f&&f.focus();});

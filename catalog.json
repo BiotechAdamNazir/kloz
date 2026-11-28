@@ -1,6 +1,6 @@
 {
  "about": "Every Kloz Adam has, in one list. The teacher page (rak/) reads this file each time it opens. Entries with kind 'studio' are refreshed from essays/ by add.py; the rest (Google Docs, English sets, items not yet in this repo) are written by hand. No student names: this repo is public.",
- "updated": "2026-11-25",
+ "updated": "2026-11-28",
  "review": "2026-12-11",
  "stale_after_days": 14,
  "levels": [
@@ -525,6 +525,48 @@
     "artifact": "https://claude.ai/artifact/91apaZKGh7vtvpVp7rH9TS"
    },
    "note": "Sekuel Kloz Amir Menjaga Kesihatan; Cabaran = 3 soalan pemahaman"
+  },
+  {
+   "id": "bm-igcse-artikel-kebun-bumbung",
+   "kind": "studio",
+   "made": "2026-11-28",
+   "log": [],
+   "home": "github",
+   "title": "Kebun Sayur di Atas Bumbung Sekolah",
+   "lang": "bm",
+   "level": "igcse",
+   "jenis": "artikel",
+   "status": "draf",
+   "source": "Claude draft 28 Nov 2026 (IGCSE Malay 0546, Paper 4 Q3 style; model is longer than 130–140 words for practice)",
+   "words": 212,
+   "gaps": 24,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-igcse-artikel-kebun-bumbung",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-artikel-kebun-bumbung",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-artikel-kebun-bumbung-skema"
+   },
+   "note": "IGCSE 0546 Q3 longer model (~210-230 words), 24 lesson gaps chosen by Claude, with #HANTAR send-back."
+  },
+  {
+   "id": "bm-igcse-emel-pasar-malam",
+   "kind": "studio",
+   "made": "2026-11-28",
+   "log": [],
+   "home": "github",
+   "title": "Malam yang Meriah di Pasar Malam",
+   "lang": "bm",
+   "level": "igcse",
+   "jenis": "e-mel",
+   "status": "draf",
+   "source": "Claude draft 28 Nov 2026 (IGCSE Malay 0546, Paper 4 Q3 style; model is longer than 130–140 words for practice)",
+   "words": 227,
+   "gaps": 24,
+   "links": {
+    "studio": "https://biotechadamnazir.github.io/kloz/studio/kloz-studio.html#e=bm-igcse-emel-pasar-malam",
+    "student": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-emel-pasar-malam",
+    "key": "https://biotechadamnazir.github.io/kloz/#w=bm-igcse-emel-pasar-malam-skema"
+   },
+   "note": "IGCSE 0546 Q3 longer model (~210-230 words), 24 lesson gaps chosen by Claude, with #HANTAR send-back."
   }
  ]
 }
